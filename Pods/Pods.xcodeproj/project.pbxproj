@@ -1,0 +1,1377 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0383A13C6B7C59A3D8EA592B545DABA0 /* JTAppleCalendarDelegateProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC4238DDF822A53D6A2D951FCAC18FA /* JTAppleCalendarDelegateProtocol.swift */; };
+		05B1F02560378D28FEBD4E8F6D293216 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11C10A31CD5CFA3EFE266394471B152E /* Foundation.framework */; };
+		06037E0BE80F83ACB522CA58C1716C85 /* Pods-CalendarSync-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E681CBC6CD8C3270D539D7202E1BA9D /* Pods-CalendarSync-dummy.m */; };
+		07340F15BACBA601736DBB2ABF1ABC35 /* GTMSessionFetcherLogging.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E3C5EE140AC627217B19108718F741F /* GTMSessionFetcherLogging.m */; };
+		0749EC40D3519957D43A1040F9662F71 /* GoogleToolboxForMac-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 62481839E2E4BEAB3C789E4E2AE0A8CB /* GoogleToolboxForMac-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		11F0D0CB930604B4DAAE93FEA3904826 /* GTMNSDictionary+URLArguments.h in Headers */ = {isa = PBXBuildFile; fileRef = E573BA41694038D93D56FD0B32AA76C9 /* GTMNSDictionary+URLArguments.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		18904C96207EA9E40B4E71F855201AD8 /* JTAppleCalendarVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76872B2A11980513DE62BC98543B3B5A /* JTAppleCalendarVariables.swift */; };
+		1ED67707C258751E7888DAC2AB3D8501 /* GTMSessionFetcherLogging.h in Headers */ = {isa = PBXBuildFile; fileRef = 34B74EACFB00709E3917A03B3841AB1E /* GTMSessionFetcherLogging.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		21A3A4A6EF95F8704DC18E4E5F509D07 /* JTAppleCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91838C7F58EEB098C5E4F9E83A19E16 /* JTAppleCollectionReusableView.swift */; };
+		2856845AB8FCE3B1D319091061F593EF /* UserInteractionFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB841737F552D66A998D4EFBCFFE6E7 /* UserInteractionFunctions.swift */; };
+		29FEADDF2086FDEA7D5BA87DD23B08C6 /* pb_decode.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FA114046A16A3DBF4B2A37DD38A51EC /* pb_decode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2EFC826FB30ECD27C98CE7F3707E9012 /* GTMNSData+zlib.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AE2C54B05B935E2AAB0985276499089 /* GTMNSData+zlib.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		32CF9BB4493C89CB01FFADD6DB754927 /* GoogleToolboxForMac-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BBC5D58D43592BB5829C7BD4DAA2B4 /* GoogleToolboxForMac-dummy.m */; };
+		392F2CF142BAA751AC1BB61D8B757D98 /* pb.h in Headers */ = {isa = PBXBuildFile; fileRef = A0C278EF1E768C81F174CEFAC80F8357 /* pb.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3A50F5C8ECED9627F2EBD97F61BD376D /* pb_common.c in Sources */ = {isa = PBXBuildFile; fileRef = FBC6925118BE4BC8866975A9AF1F9E97 /* pb_common.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc -fno-objc-arc -fno-objc-arc"; }; };
+		42F0A3DBCAC670C336C5C988F6609D98 /* UICollectionViewDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D18F83CD8A620651DFF349817B7C46 /* UICollectionViewDelegates.swift */; };
+		468DFD90B6C4DA2F7CFA0C1C89F1B615 /* nanopb-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 45CF0408FAD1CE2BEE7605A1B89DA6AF /* nanopb-dummy.m */; };
+		4C82C6D818FF0F56A5506D9F48E38902 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11C10A31CD5CFA3EFE266394471B152E /* Foundation.framework */; };
+		4F2AB5BFF7D9DE66B8B242ACE69AE0D9 /* GTMDebugThreadValidation.h in Headers */ = {isa = PBXBuildFile; fileRef = BF9356F82B152630024A3F77BCE76C22 /* GTMDebugThreadValidation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		53D7D34D0142A101314ABFA663AC9D08 /* JTAppleCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC25D54EB44AA5DBB6A345DFE1591B07 /* JTAppleCalendarView.swift */; };
+		54F580BF4588159D6A61F21D15591805 /* pb_decode.c in Sources */ = {isa = PBXBuildFile; fileRef = 9A28CA9D1D217F177FA69C1D71B27661 /* pb_decode.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc -fno-objc-arc"; }; };
+		55D8D5D912CFD2F3584E4553C2EAD734 /* pb_encode.c in Sources */ = {isa = PBXBuildFile; fileRef = 8C89CA9885CF77B6747B71F4D7B94735 /* pb_encode.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc -fno-objc-arc"; }; };
+		5B92D1D5ECFEBA99F4C67864E1397A6D /* GTMNSString+URLArguments.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DC3D953760670F90F7E6CB6EF93A7A /* GTMNSString+URLArguments.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		64F31B70A6E5E6963518A01C285B435F /* GTMSessionFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E4A0FF09960F01D3CB2531882D007DE /* GTMSessionFetcher.m */; };
+		6DE7D8CE614DBA55D744EDE81C632AD8 /* CalendarStructs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395FB6DA75D325425549135B04B09398 /* CalendarStructs.swift */; };
+		6E8E4422AA0E96DCBB9D329BDFFB881A /* GlobalFunctionsAndExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB75C141F83B162B4C8DB7AE2B076DEF /* GlobalFunctionsAndExtensions.swift */; };
+		6EA6DFC4473A9B2DB6B8A42EA986BA5B /* GTMSessionFetcher-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AC61DB59F7DE6C302EFBC844DF40540 /* GTMSessionFetcher-dummy.m */; };
+		72FDE938CDEA2132E7774C4AEF93EF70 /* Pods-CalendarSync-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A80DEF3BC7D1684A6C744B726506EAC3 /* Pods-CalendarSync-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7BE39092951B492E5954D8012747BFD0 /* JTAppleCalendarLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2453FBDC9B9CE3766AF07D155FDC839 /* JTAppleCalendarLayout.swift */; };
+		806BAA4E00218D70995697C4400BE7A0 /* pb_common.h in Headers */ = {isa = PBXBuildFile; fileRef = 87D064F87DA2BB806984AAD8F6B95AAD /* pb_common.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		87329FA016F0D57803855BCE3E90EC82 /* JTCalendarProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED2CFA59874578B71F3470AF15CD558 /* JTCalendarProtocols.swift */; };
+		8852FD9AFC242520924D98BE9C4E2477 /* GTMSessionFetcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 52966525AA715F4B8AC09E66160DE26D /* GTMSessionFetcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9024F4774BD8DDE03700B223CF7F8164 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11C10A31CD5CFA3EFE266394471B152E /* Foundation.framework */; };
+		95C69447F517DB81437EDE0003486963 /* GTMSessionFetcherService.m in Sources */ = {isa = PBXBuildFile; fileRef = B44DD2ECD87E748C5B688C2E534BD994 /* GTMSessionFetcherService.m */; };
+		9DA28C3544749A7DB9AB129BEC773550 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C085E02FF89804F50ADDA04F5A586E94 /* Security.framework */; };
+		AD07BFC6787F19F9D7CADB48C114FDB7 /* JTAppleCalendar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 446A7B56761A0FFC002A7AFD2AFE6E64 /* JTAppleCalendar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B05C496A6F67CE9F60DC711F402AB20A /* GTMDebugSelectorValidation.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B134836C921F4C61CE02627A16A2699 /* GTMDebugSelectorValidation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B815F6A8C0E87E87871758E6EAD46D89 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11C10A31CD5CFA3EFE266394471B152E /* Foundation.framework */; };
+		B9A04CBBF007CB8AAF75D61C5EF4D81F /* GTMMethodCheck.h in Headers */ = {isa = PBXBuildFile; fileRef = 411D4168238AB23C6E66E6953BA6B458 /* GTMMethodCheck.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C34E24520624B382515A0F58185E6926 /* GTMNSData+zlib.h in Headers */ = {isa = PBXBuildFile; fileRef = 414D0F2FCDBFBA89C39DE3BF2FF85072 /* GTMNSData+zlib.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C4A1A63A4C67D9828DF94807BC2C3002 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11C10A31CD5CFA3EFE266394471B152E /* Foundation.framework */; };
+		D28734EDC84B2A7FBC4D5DCF95177BF8 /* GTMDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 66C08753B215E271CFE555ECB9729B0D /* GTMDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D3F381B45ADFDDE51CA31F1E141236CA /* GTMSessionFetcher-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 48C023C35E065C9B7A7ED89FB056A435 /* GTMSessionFetcher-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DA2F5A299DC9A8ECC5F73A66172E64BC /* GTMNSString+URLArguments.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C28D7737EFCA80D5E9A4705B4D26174 /* GTMNSString+URLArguments.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DF9559C3822E3C6119BE43E4EDFD7EEE /* GTMSessionFetcherService.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A5ECCDCB3A4DB5183B7C531C3CFC472 /* GTMSessionFetcherService.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E10E15A8A65DB167DE5046915870021A /* JTAppleCalendarLayoutProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68842FBFC6DB049EFFC3C964171DC316 /* JTAppleCalendarLayoutProtocol.swift */; };
+		E181395E73163EB702FCE9A21403D67B /* pb_encode.h in Headers */ = {isa = PBXBuildFile; fileRef = 949D9455111AD3931C2DC23A3F0D94AD /* pb_encode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E1CF59B57CC636FECACC39325231B177 /* CalendarEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC56420E079A667E0BEFBE25B939E1CF /* CalendarEnums.swift */; };
+		E4E19B08166BF4E9E368134D68E9C7DE /* JTAppleCalendar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A24A8FD9917926C0574E257E393DDA83 /* JTAppleCalendar-dummy.m */; };
+		E7D23D2F163A34BEC60FD54BCCC22C76 /* GTMNSDictionary+URLArguments.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD7B6FD1BD9364E91628DE2BE500042 /* GTMNSDictionary+URLArguments.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		F09EDD53B94234F5F8DAC4DCD5CD969E /* GTMSessionUploadFetcher.h in Headers */ = {isa = PBXBuildFile; fileRef = AF58B15CA6961B2369DE53CAD270E9DC /* GTMSessionUploadFetcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F2BB49EF903A70B7B68565CCE233FB83 /* JTAppleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F954D3811B78748A9D068D6F4588233 /* JTAppleCell.swift */; };
+		F4E294C07EE32FFCDCF7FF4D71D850BD /* GTMSessionUploadFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = A97B6B5096C49FE638D7DDFBC5867706 /* GTMSessionUploadFetcher.m */; };
+		F963037A1450F74FAE911C248EED47CE /* UIScrollViewDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95291429C69727026C24B774D6C437C /* UIScrollViewDelegates.swift */; };
+		F9D92BA503505CB48EF4ECF0DDF57686 /* nanopb-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FE67BA5FFB601E9B2E9603120AB3B5E9 /* nanopb-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1A4EDF87AC83232DBF7D7670475D0F68 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 107A9565F9DF88517DFD3E28C05B2B96;
+			remoteInfo = GoogleToolboxForMac;
+		};
+		4A343F54AA11CD9B46DACB33892412AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C052BEBFBD0AB5218CC64BA3450F6547;
+			remoteInfo = GTMSessionFetcher;
+		};
+		73F1CFC1AAA2BAF34E434E7524A9E95E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E4DD95323C54A78F879DAB0F1508B8E7;
+			remoteInfo = nanopb;
+		};
+		9C26E76ED93A41FFC7A4E62E9763C1EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BFED2E29E95E065400F8846E0231A970;
+			remoteInfo = JTAppleCalendar;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01D4C42A666F9911DC61D6DE255E7DC6 /* GTMSessionFetcher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GTMSessionFetcher.framework; path = GTMSessionFetcher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		04A27B59F75BA9FDF78BC5CFD3EB5863 /* nanopb.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = nanopb.modulemap; sourceTree = "<group>"; };
+		0D816C94BF2E5284F5270F9CCE7B2373 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11C10A31CD5CFA3EFE266394471B152E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		1336C8B3C73E9CEA3361A065155BE7BF /* Pods-CalendarSync.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CalendarSync.debug.xcconfig"; sourceTree = "<group>"; };
+		14D18F83CD8A620651DFF349817B7C46 /* UICollectionViewDelegates.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UICollectionViewDelegates.swift; path = Sources/UICollectionViewDelegates.swift; sourceTree = "<group>"; };
+		1A5ECCDCB3A4DB5183B7C531C3CFC472 /* GTMSessionFetcherService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTMSessionFetcherService.h; path = Source/GTMSessionFetcherService.h; sourceTree = "<group>"; };
+		1DC4D9B6D3D45999223FA1DB76905915 /* FirebaseCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseCore.framework; path = Frameworks/FirebaseCore.framework; sourceTree = "<group>"; };
+		1EC4238DDF822A53D6A2D951FCAC18FA /* JTAppleCalendarDelegateProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTAppleCalendarDelegateProtocol.swift; path = Sources/JTAppleCalendarDelegateProtocol.swift; sourceTree = "<group>"; };
+		200CE8D6ED18DCD8FEC78D7D4A6B672A /* GTMSessionFetcher.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = GTMSessionFetcher.modulemap; sourceTree = "<group>"; };
+		22DC3D953760670F90F7E6CB6EF93A7A /* GTMNSString+URLArguments.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "GTMNSString+URLArguments.m"; path = "Foundation/GTMNSString+URLArguments.m"; sourceTree = "<group>"; };
+		289D2E6500EF8D9C932BF197A0D9CDD6 /* GoogleToolboxForMac-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GoogleToolboxForMac-prefix.pch"; sourceTree = "<group>"; };
+		2B77AFD9AE381B156F6C6529A06A531A /* FirebaseCoreDiagnostics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseCoreDiagnostics.framework; path = Frameworks/FirebaseCoreDiagnostics.framework; sourceTree = "<group>"; };
+		2FA114046A16A3DBF4B2A37DD38A51EC /* pb_decode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = pb_decode.h; sourceTree = "<group>"; };
+		34B74EACFB00709E3917A03B3841AB1E /* GTMSessionFetcherLogging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTMSessionFetcherLogging.h; path = Source/GTMSessionFetcherLogging.h; sourceTree = "<group>"; };
+		394DE6F39F55151168A6F7262DC97E5F /* Pods-CalendarSync-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CalendarSync-resources.sh"; sourceTree = "<group>"; };
+		395FB6DA75D325425549135B04B09398 /* CalendarStructs.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CalendarStructs.swift; path = Sources/CalendarStructs.swift; sourceTree = "<group>"; };
+		3967C64FB6E11C0C8DC444E5CA9D1141 /* Firebase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Firebase.h; path = Core/Sources/Firebase.h; sourceTree = "<group>"; };
+		411D4168238AB23C6E66E6953BA6B458 /* GTMMethodCheck.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTMMethodCheck.h; path = DebugUtils/GTMMethodCheck.h; sourceTree = "<group>"; };
+		414D0F2FCDBFBA89C39DE3BF2FF85072 /* GTMNSData+zlib.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "GTMNSData+zlib.h"; path = "Foundation/GTMNSData+zlib.h"; sourceTree = "<group>"; };
+		44287756E44AC5EEFE0985D5F6D00CA2 /* GoogleToolboxForMac.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = GoogleToolboxForMac.modulemap; sourceTree = "<group>"; };
+		446A7B56761A0FFC002A7AFD2AFE6E64 /* JTAppleCalendar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JTAppleCalendar-umbrella.h"; sourceTree = "<group>"; };
+		45CF0408FAD1CE2BEE7605A1B89DA6AF /* nanopb-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "nanopb-dummy.m"; sourceTree = "<group>"; };
+		4812F2C38274E616AE0A82293CEC24B3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48C023C35E065C9B7A7ED89FB056A435 /* GTMSessionFetcher-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GTMSessionFetcher-umbrella.h"; sourceTree = "<group>"; };
+		4A427178206FA4241C4E44EEF218CA1E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E681CBC6CD8C3270D539D7202E1BA9D /* Pods-CalendarSync-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CalendarSync-dummy.m"; sourceTree = "<group>"; };
+		52966525AA715F4B8AC09E66160DE26D /* GTMSessionFetcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTMSessionFetcher.h; path = Source/GTMSessionFetcher.h; sourceTree = "<group>"; };
+		55A51EECCE7A27553AA7CF9C640F6219 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		594771D99B9765DC21F7B1A880B4BC10 /* nanopb-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "nanopb-prefix.pch"; sourceTree = "<group>"; };
+		5E3C5EE140AC627217B19108718F741F /* GTMSessionFetcherLogging.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTMSessionFetcherLogging.m; path = Source/GTMSessionFetcherLogging.m; sourceTree = "<group>"; };
+		5ED2CFA59874578B71F3470AF15CD558 /* JTCalendarProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTCalendarProtocols.swift; path = Sources/JTCalendarProtocols.swift; sourceTree = "<group>"; };
+		5F954D3811B78748A9D068D6F4588233 /* JTAppleCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTAppleCell.swift; path = Sources/JTAppleCell.swift; sourceTree = "<group>"; };
+		62481839E2E4BEAB3C789E4E2AE0A8CB /* GoogleToolboxForMac-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GoogleToolboxForMac-umbrella.h"; sourceTree = "<group>"; };
+		66C08753B215E271CFE555ECB9729B0D /* GTMDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
+		68842FBFC6DB049EFFC3C964171DC316 /* JTAppleCalendarLayoutProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTAppleCalendarLayoutProtocol.swift; path = Sources/JTAppleCalendarLayoutProtocol.swift; sourceTree = "<group>"; };
+		6D8F1CAF017E8768DE9A5A71730295D2 /* JTAppleCalendar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JTAppleCalendar-prefix.pch"; sourceTree = "<group>"; };
+		6FD193F9C3ABEFB12E2EAAB8D1F9E65A /* Pods-CalendarSync-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CalendarSync-frameworks.sh"; sourceTree = "<group>"; };
+		754A9DBFA26C9704BE2EB158CAE56D84 /* FirebaseAuth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAuth.framework; path = Frameworks/FirebaseAuth.framework; sourceTree = "<group>"; };
+		76872B2A11980513DE62BC98543B3B5A /* JTAppleCalendarVariables.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTAppleCalendarVariables.swift; path = Sources/JTAppleCalendarVariables.swift; sourceTree = "<group>"; };
+		77098BC5AB3291E5002AEB46E191D147 /* GoogleToolboxForMac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GoogleToolboxForMac.framework; path = GoogleToolboxForMac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7AC61DB59F7DE6C302EFBC844DF40540 /* GTMSessionFetcher-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GTMSessionFetcher-dummy.m"; sourceTree = "<group>"; };
+		7F64F7889324ADDDD5D36DC1AD021468 /* GoogleToolboxForMac.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GoogleToolboxForMac.xcconfig; sourceTree = "<group>"; };
+		82A59788F3771C16E6D7254456864DB3 /* GTMSessionFetcher.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GTMSessionFetcher.xcconfig; sourceTree = "<group>"; };
+		87D064F87DA2BB806984AAD8F6B95AAD /* pb_common.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = pb_common.h; sourceTree = "<group>"; };
+		8AE2C54B05B935E2AAB0985276499089 /* GTMNSData+zlib.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "GTMNSData+zlib.m"; path = "Foundation/GTMNSData+zlib.m"; sourceTree = "<group>"; };
+		8BB841737F552D66A998D4EFBCFFE6E7 /* UserInteractionFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UserInteractionFunctions.swift; path = Sources/UserInteractionFunctions.swift; sourceTree = "<group>"; };
+		8C89CA9885CF77B6747B71F4D7B94735 /* pb_encode.c */ = {isa = PBXFileReference; includeInIndex = 1; path = pb_encode.c; sourceTree = "<group>"; };
+		914511B274FB097EF80FAA2C61780E91 /* JTAppleCalendar.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JTAppleCalendar.xcconfig; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		949D9455111AD3931C2DC23A3F0D94AD /* pb_encode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = pb_encode.h; sourceTree = "<group>"; };
+		9A28CA9D1D217F177FA69C1D71B27661 /* pb_decode.c */ = {isa = PBXFileReference; includeInIndex = 1; path = pb_decode.c; sourceTree = "<group>"; };
+		9B134836C921F4C61CE02627A16A2699 /* GTMDebugSelectorValidation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTMDebugSelectorValidation.h; path = DebugUtils/GTMDebugSelectorValidation.h; sourceTree = "<group>"; };
+		9C28D7737EFCA80D5E9A4705B4D26174 /* GTMNSString+URLArguments.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "GTMNSString+URLArguments.h"; path = "Foundation/GTMNSString+URLArguments.h"; sourceTree = "<group>"; };
+		9E4A0FF09960F01D3CB2531882D007DE /* GTMSessionFetcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTMSessionFetcher.m; path = Source/GTMSessionFetcher.m; sourceTree = "<group>"; };
+		A0470D774B91D1584A34268D1876148B /* Pods-CalendarSync-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CalendarSync-acknowledgements.plist"; sourceTree = "<group>"; };
+		A0C278EF1E768C81F174CEFAC80F8357 /* pb.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = pb.h; sourceTree = "<group>"; };
+		A24A8FD9917926C0574E257E393DDA83 /* JTAppleCalendar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JTAppleCalendar-dummy.m"; sourceTree = "<group>"; };
+		A4736B7E86C986B6D620613D25529399 /* Pods-CalendarSync-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CalendarSync-acknowledgements.markdown"; sourceTree = "<group>"; };
+		A80DEF3BC7D1684A6C744B726506EAC3 /* Pods-CalendarSync-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CalendarSync-umbrella.h"; sourceTree = "<group>"; };
+		A97B6B5096C49FE638D7DDFBC5867706 /* GTMSessionUploadFetcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTMSessionUploadFetcher.m; path = Source/GTMSessionUploadFetcher.m; sourceTree = "<group>"; };
+		AB75C141F83B162B4C8DB7AE2B076DEF /* GlobalFunctionsAndExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GlobalFunctionsAndExtensions.swift; path = Sources/GlobalFunctionsAndExtensions.swift; sourceTree = "<group>"; };
+		AC25D54EB44AA5DBB6A345DFE1591B07 /* JTAppleCalendarView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTAppleCalendarView.swift; path = Sources/JTAppleCalendarView.swift; sourceTree = "<group>"; };
+		AE2505EF0B303F023508B99F37F1F46B /* Pods-CalendarSync.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-CalendarSync.modulemap"; sourceTree = "<group>"; };
+		AED4B1D0332418F89A01B41ED0B55D06 /* Pods-CalendarSync.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CalendarSync.release.xcconfig"; sourceTree = "<group>"; };
+		AF58B15CA6961B2369DE53CAD270E9DC /* GTMSessionUploadFetcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTMSessionUploadFetcher.h; path = Source/GTMSessionUploadFetcher.h; sourceTree = "<group>"; };
+		B0EBE71497CD5ADD941D0079246CC52E /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseInstanceID.framework; path = Frameworks/FirebaseInstanceID.framework; sourceTree = "<group>"; };
+		B44DD2ECD87E748C5B688C2E534BD994 /* GTMSessionFetcherService.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTMSessionFetcherService.m; path = Source/GTMSessionFetcherService.m; sourceTree = "<group>"; };
+		B95291429C69727026C24B774D6C437C /* UIScrollViewDelegates.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIScrollViewDelegates.swift; path = Sources/UIScrollViewDelegates.swift; sourceTree = "<group>"; };
+		BEFCDD74FB4F524AB2A1103106FA0AF5 /* GTMSessionFetcher-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GTMSessionFetcher-prefix.pch"; sourceTree = "<group>"; };
+		BF9356F82B152630024A3F77BCE76C22 /* GTMDebugThreadValidation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTMDebugThreadValidation.h; path = DebugUtils/GTMDebugThreadValidation.h; sourceTree = "<group>"; };
+		C085E02FF89804F50ADDA04F5A586E94 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		C6199B6F9244C9F6DA32B953008FA23A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C91838C7F58EEB098C5E4F9E83A19E16 /* JTAppleCollectionReusableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTAppleCollectionReusableView.swift; path = Sources/JTAppleCollectionReusableView.swift; sourceTree = "<group>"; };
+		C91BB20FBCA187892701BA20E4C4BAC2 /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAnalytics.framework; path = Frameworks/FirebaseAnalytics.framework; sourceTree = "<group>"; };
+		D0BBC5D58D43592BB5829C7BD4DAA2B4 /* GoogleToolboxForMac-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GoogleToolboxForMac-dummy.m"; sourceTree = "<group>"; };
+		D2453FBDC9B9CE3766AF07D155FDC839 /* JTAppleCalendarLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTAppleCalendarLayout.swift; path = Sources/JTAppleCalendarLayout.swift; sourceTree = "<group>"; };
+		DC56420E079A667E0BEFBE25B939E1CF /* CalendarEnums.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CalendarEnums.swift; path = Sources/CalendarEnums.swift; sourceTree = "<group>"; };
+		E1B1E1224F91C7495047C5A426ED5D25 /* JTAppleCalendar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = JTAppleCalendar.modulemap; sourceTree = "<group>"; };
+		E573BA41694038D93D56FD0B32AA76C9 /* GTMNSDictionary+URLArguments.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "GTMNSDictionary+URLArguments.h"; path = "Foundation/GTMNSDictionary+URLArguments.h"; sourceTree = "<group>"; };
+		EB60FD8FF0E9A2AFBE46C9A420CDDE43 /* nanopb.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = nanopb.framework; path = nanopb.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBD7B6FD1BD9364E91628DE2BE500042 /* GTMNSDictionary+URLArguments.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "GTMNSDictionary+URLArguments.m"; path = "Foundation/GTMNSDictionary+URLArguments.m"; sourceTree = "<group>"; };
+		EC0905715DA9789CEA4146AE777D9F4F /* JTAppleCalendar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = JTAppleCalendar.framework; path = JTAppleCalendar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F717D88CAD604C011F7D59B7BF139EC5 /* nanopb.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = nanopb.xcconfig; sourceTree = "<group>"; };
+		F73DE8D7EBDF7A264326E3C119E764FA /* Pods_CalendarSync.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CalendarSync.framework; path = "Pods-CalendarSync.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F94246F6BFFF7BD6CBC1976564F29F1A /* FirebaseNanoPB.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseNanoPB.framework; path = Frameworks/FirebaseNanoPB.framework; sourceTree = "<group>"; };
+		FBC6925118BE4BC8866975A9AF1F9E97 /* pb_common.c */ = {isa = PBXFileReference; includeInIndex = 1; path = pb_common.c; sourceTree = "<group>"; };
+		FE67BA5FFB601E9B2E9603120AB3B5E9 /* nanopb-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "nanopb-umbrella.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		456A38528F491C16A318D4091CF2E1F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B815F6A8C0E87E87871758E6EAD46D89 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6AE88E96161DE195EAAF0A3B6375EA50 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9024F4774BD8DDE03700B223CF7F8164 /* Foundation.framework in Frameworks */,
+				9DA28C3544749A7DB9AB129BEC773550 /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		971041836592E28ADEEDA495A96A62A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05B1F02560378D28FEBD4E8F6D293216 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DB2FD04E98E8D08B812CFAD3603A106 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4A1A63A4C67D9828DF94807BC2C3002 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADCC43B360E134FB1FD467C31226504E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C82C6D818FF0F56A5506D9F48E38902 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		01F9E798342AE6BD9B9E6DC7BDEE131C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				55A51EECCE7A27553AA7CF9C640F6219 /* Info.plist */,
+				04A27B59F75BA9FDF78BC5CFD3EB5863 /* nanopb.modulemap */,
+				F717D88CAD604C011F7D59B7BF139EC5 /* nanopb.xcconfig */,
+				45CF0408FAD1CE2BEE7605A1B89DA6AF /* nanopb-dummy.m */,
+				594771D99B9765DC21F7B1A880B4BC10 /* nanopb-prefix.pch */,
+				FE67BA5FFB601E9B2E9603120AB3B5E9 /* nanopb-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/nanopb";
+			sourceTree = "<group>";
+		};
+		11872085D7078BE70F7DFB02A0F345C7 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5D3691C37E26D4CB22A150E133E8E65E /* Pods-CalendarSync */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		124640CDE68833B3443F848335D1A193 /* FirebaseAnalytics */ = {
+			isa = PBXGroup;
+			children = (
+				3B9085CA8CB17F04C3713ACA0E1743D3 /* Frameworks */,
+			);
+			name = FirebaseAnalytics;
+			path = FirebaseAnalytics;
+			sourceTree = "<group>";
+		};
+		1CC8DBA5F30662730FBAB5DBAEFCC9EE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				77098BC5AB3291E5002AEB46E191D147 /* GoogleToolboxForMac.framework */,
+				01D4C42A666F9911DC61D6DE255E7DC6 /* GTMSessionFetcher.framework */,
+				EC0905715DA9789CEA4146AE777D9F4F /* JTAppleCalendar.framework */,
+				EB60FD8FF0E9A2AFBE46C9A420CDDE43 /* nanopb.framework */,
+				F73DE8D7EBDF7A264326E3C119E764FA /* Pods_CalendarSync.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1D7069CD3D29C7B09394CC87B4998760 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				754A9DBFA26C9704BE2EB158CAE56D84 /* FirebaseAuth.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		312E84ED3A86F06E83986EE966D88FEC /* FirebaseInstanceID */ = {
+			isa = PBXGroup;
+			children = (
+				CD4E1793D1AE496358D42E32A95F8979 /* Frameworks */,
+			);
+			name = FirebaseInstanceID;
+			path = FirebaseInstanceID;
+			sourceTree = "<group>";
+		};
+		341540E7AF3B574FC177D09BAD8C269E /* NSDictionary+URLArguments */ = {
+			isa = PBXGroup;
+			children = (
+				E573BA41694038D93D56FD0B32AA76C9 /* GTMNSDictionary+URLArguments.h */,
+				EBD7B6FD1BD9364E91628DE2BE500042 /* GTMNSDictionary+URLArguments.m */,
+			);
+			name = "NSDictionary+URLArguments";
+			sourceTree = "<group>";
+		};
+		3B9085CA8CB17F04C3713ACA0E1743D3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C91BB20FBCA187892701BA20E4C4BAC2 /* FirebaseAnalytics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4F990579C2E52276FD3C28227B49D60B /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4891B5BBECF84923912AB2EB954BBA5B /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				8310C2F03BC600EC13FFB862655E80FA /* Core */,
+			);
+			name = Firebase;
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+		4F990579C2E52276FD3C28227B49D60B /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				11C10A31CD5CFA3EFE266394471B152E /* Foundation.framework */,
+				C085E02FF89804F50ADDA04F5A586E94 /* Security.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		5D3691C37E26D4CB22A150E133E8E65E /* Pods-CalendarSync */ = {
+			isa = PBXGroup;
+			children = (
+				4A427178206FA4241C4E44EEF218CA1E /* Info.plist */,
+				AE2505EF0B303F023508B99F37F1F46B /* Pods-CalendarSync.modulemap */,
+				A4736B7E86C986B6D620613D25529399 /* Pods-CalendarSync-acknowledgements.markdown */,
+				A0470D774B91D1584A34268D1876148B /* Pods-CalendarSync-acknowledgements.plist */,
+				4E681CBC6CD8C3270D539D7202E1BA9D /* Pods-CalendarSync-dummy.m */,
+				6FD193F9C3ABEFB12E2EAAB8D1F9E65A /* Pods-CalendarSync-frameworks.sh */,
+				394DE6F39F55151168A6F7262DC97E5F /* Pods-CalendarSync-resources.sh */,
+				A80DEF3BC7D1684A6C744B726506EAC3 /* Pods-CalendarSync-umbrella.h */,
+				1336C8B3C73E9CEA3361A065155BE7BF /* Pods-CalendarSync.debug.xcconfig */,
+				AED4B1D0332418F89A01B41ED0B55D06 /* Pods-CalendarSync.release.xcconfig */,
+			);
+			name = "Pods-CalendarSync";
+			path = "Target Support Files/Pods-CalendarSync";
+			sourceTree = "<group>";
+		};
+		61B50B2ADCD316C5D33EF98C81C1F1F2 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				52966525AA715F4B8AC09E66160DE26D /* GTMSessionFetcher.h */,
+				9E4A0FF09960F01D3CB2531882D007DE /* GTMSessionFetcher.m */,
+				34B74EACFB00709E3917A03B3841AB1E /* GTMSessionFetcherLogging.h */,
+				5E3C5EE140AC627217B19108718F741F /* GTMSessionFetcherLogging.m */,
+				1A5ECCDCB3A4DB5183B7C531C3CFC472 /* GTMSessionFetcherService.h */,
+				B44DD2ECD87E748C5B688C2E534BD994 /* GTMSessionFetcherService.m */,
+				AF58B15CA6961B2369DE53CAD270E9DC /* GTMSessionUploadFetcher.h */,
+				A97B6B5096C49FE638D7DDFBC5867706 /* GTMSessionUploadFetcher.m */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		63506FC70FE631A2940E9BC386D2C1F2 /* NSData+zlib */ = {
+			isa = PBXGroup;
+			children = (
+				414D0F2FCDBFBA89C39DE3BF2FF85072 /* GTMNSData+zlib.h */,
+				8AE2C54B05B935E2AAB0985276499089 /* GTMNSData+zlib.m */,
+			);
+			name = "NSData+zlib";
+			sourceTree = "<group>";
+		};
+		64566BF3D889690DF1F814F9A068647B /* decode */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = decode;
+			sourceTree = "<group>";
+		};
+		6D4F935DAD1D89B41DE3B2E9AE13989F /* GoogleToolboxForMac */ = {
+			isa = PBXGroup;
+			children = (
+				E1755621544EFE533A513400E51319DB /* DebugUtils */,
+				A97FC0B0ECC5B0D91026E9DBEDF072C9 /* Defines */,
+				63506FC70FE631A2940E9BC386D2C1F2 /* NSData+zlib */,
+				341540E7AF3B574FC177D09BAD8C269E /* NSDictionary+URLArguments */,
+				72BCCBB81C9250A758C65DA9BC645DF6 /* NSString+URLArguments */,
+				DCFFC420F625703631A55BB6D6699DA7 /* Support Files */,
+			);
+			name = GoogleToolboxForMac;
+			path = GoogleToolboxForMac;
+			sourceTree = "<group>";
+		};
+		72BCCBB81C9250A758C65DA9BC645DF6 /* NSString+URLArguments */ = {
+			isa = PBXGroup;
+			children = (
+				9C28D7737EFCA80D5E9A4705B4D26174 /* GTMNSString+URLArguments.h */,
+				22DC3D953760670F90F7E6CB6EF93A7A /* GTMNSString+URLArguments.m */,
+			);
+			name = "NSString+URLArguments";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				AF2E55474DB69FE4AD7C6941633D45A8 /* Pods */,
+				1CC8DBA5F30662730FBAB5DBAEFCC9EE /* Products */,
+				11872085D7078BE70F7DFB02A0F345C7 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		7FEA4CB64CC885D593596757AA6AD669 /* FirebaseAuth */ = {
+			isa = PBXGroup;
+			children = (
+				1D7069CD3D29C7B09394CC87B4998760 /* Frameworks */,
+			);
+			name = FirebaseAuth;
+			path = FirebaseAuth;
+			sourceTree = "<group>";
+		};
+		827613C2E181D6E28B834D5FF2F90812 /* encode */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = encode;
+			sourceTree = "<group>";
+		};
+		8310C2F03BC600EC13FFB862655E80FA /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				3967C64FB6E11C0C8DC444E5CA9D1141 /* Firebase.h */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		904A2D3229F1133F9D024092370006CA /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				200CE8D6ED18DCD8FEC78D7D4A6B672A /* GTMSessionFetcher.modulemap */,
+				82A59788F3771C16E6D7254456864DB3 /* GTMSessionFetcher.xcconfig */,
+				7AC61DB59F7DE6C302EFBC844DF40540 /* GTMSessionFetcher-dummy.m */,
+				BEFCDD74FB4F524AB2A1103106FA0AF5 /* GTMSessionFetcher-prefix.pch */,
+				48C023C35E065C9B7A7ED89FB056A435 /* GTMSessionFetcher-umbrella.h */,
+				0D816C94BF2E5284F5270F9CCE7B2373 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/GTMSessionFetcher";
+			sourceTree = "<group>";
+		};
+		98A09424A9FFEF7C8F2F01A7628E9A3B /* GTMSessionFetcher */ = {
+			isa = PBXGroup;
+			children = (
+				61B50B2ADCD316C5D33EF98C81C1F1F2 /* Core */,
+				904A2D3229F1133F9D024092370006CA /* Support Files */,
+			);
+			name = GTMSessionFetcher;
+			path = GTMSessionFetcher;
+			sourceTree = "<group>";
+		};
+		A97FC0B0ECC5B0D91026E9DBEDF072C9 /* Defines */ = {
+			isa = PBXGroup;
+			children = (
+				66C08753B215E271CFE555ECB9729B0D /* GTMDefines.h */,
+			);
+			name = Defines;
+			sourceTree = "<group>";
+		};
+		AD25A9B0B29DC6AAE55702CE08FECBAA /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C6199B6F9244C9F6DA32B953008FA23A /* Info.plist */,
+				E1B1E1224F91C7495047C5A426ED5D25 /* JTAppleCalendar.modulemap */,
+				914511B274FB097EF80FAA2C61780E91 /* JTAppleCalendar.xcconfig */,
+				A24A8FD9917926C0574E257E393DDA83 /* JTAppleCalendar-dummy.m */,
+				6D8F1CAF017E8768DE9A5A71730295D2 /* JTAppleCalendar-prefix.pch */,
+				446A7B56761A0FFC002A7AFD2AFE6E64 /* JTAppleCalendar-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/JTAppleCalendar";
+			sourceTree = "<group>";
+		};
+		AF2E55474DB69FE4AD7C6941633D45A8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4891B5BBECF84923912AB2EB954BBA5B /* Firebase */,
+				124640CDE68833B3443F848335D1A193 /* FirebaseAnalytics */,
+				7FEA4CB64CC885D593596757AA6AD669 /* FirebaseAuth */,
+				DC58BA12E277A823D84B7B638C0206C8 /* FirebaseCore */,
+				312E84ED3A86F06E83986EE966D88FEC /* FirebaseInstanceID */,
+				6D4F935DAD1D89B41DE3B2E9AE13989F /* GoogleToolboxForMac */,
+				98A09424A9FFEF7C8F2F01A7628E9A3B /* GTMSessionFetcher */,
+				E4CCA3FA35717B518C22B863AB1364C5 /* JTAppleCalendar */,
+				EFB7A0726D4DABE1296E0266BA20D94C /* nanopb */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BB8D7A4E80DDB04BC039BED9F9052DD7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1DC4D9B6D3D45999223FA1DB76905915 /* FirebaseCore.framework */,
+				2B77AFD9AE381B156F6C6529A06A531A /* FirebaseCoreDiagnostics.framework */,
+				F94246F6BFFF7BD6CBC1976564F29F1A /* FirebaseNanoPB.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CD4E1793D1AE496358D42E32A95F8979 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B0EBE71497CD5ADD941D0079246CC52E /* FirebaseInstanceID.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DC58BA12E277A823D84B7B638C0206C8 /* FirebaseCore */ = {
+			isa = PBXGroup;
+			children = (
+				BB8D7A4E80DDB04BC039BED9F9052DD7 /* Frameworks */,
+			);
+			name = FirebaseCore;
+			path = FirebaseCore;
+			sourceTree = "<group>";
+		};
+		DCFFC420F625703631A55BB6D6699DA7 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				44287756E44AC5EEFE0985D5F6D00CA2 /* GoogleToolboxForMac.modulemap */,
+				7F64F7889324ADDDD5D36DC1AD021468 /* GoogleToolboxForMac.xcconfig */,
+				D0BBC5D58D43592BB5829C7BD4DAA2B4 /* GoogleToolboxForMac-dummy.m */,
+				289D2E6500EF8D9C932BF197A0D9CDD6 /* GoogleToolboxForMac-prefix.pch */,
+				62481839E2E4BEAB3C789E4E2AE0A8CB /* GoogleToolboxForMac-umbrella.h */,
+				4812F2C38274E616AE0A82293CEC24B3 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/GoogleToolboxForMac";
+			sourceTree = "<group>";
+		};
+		E1755621544EFE533A513400E51319DB /* DebugUtils */ = {
+			isa = PBXGroup;
+			children = (
+				9B134836C921F4C61CE02627A16A2699 /* GTMDebugSelectorValidation.h */,
+				BF9356F82B152630024A3F77BCE76C22 /* GTMDebugThreadValidation.h */,
+				411D4168238AB23C6E66E6953BA6B458 /* GTMMethodCheck.h */,
+			);
+			name = DebugUtils;
+			sourceTree = "<group>";
+		};
+		E4CCA3FA35717B518C22B863AB1364C5 /* JTAppleCalendar */ = {
+			isa = PBXGroup;
+			children = (
+				DC56420E079A667E0BEFBE25B939E1CF /* CalendarEnums.swift */,
+				395FB6DA75D325425549135B04B09398 /* CalendarStructs.swift */,
+				AB75C141F83B162B4C8DB7AE2B076DEF /* GlobalFunctionsAndExtensions.swift */,
+				1EC4238DDF822A53D6A2D951FCAC18FA /* JTAppleCalendarDelegateProtocol.swift */,
+				D2453FBDC9B9CE3766AF07D155FDC839 /* JTAppleCalendarLayout.swift */,
+				68842FBFC6DB049EFFC3C964171DC316 /* JTAppleCalendarLayoutProtocol.swift */,
+				76872B2A11980513DE62BC98543B3B5A /* JTAppleCalendarVariables.swift */,
+				AC25D54EB44AA5DBB6A345DFE1591B07 /* JTAppleCalendarView.swift */,
+				5F954D3811B78748A9D068D6F4588233 /* JTAppleCell.swift */,
+				C91838C7F58EEB098C5E4F9E83A19E16 /* JTAppleCollectionReusableView.swift */,
+				5ED2CFA59874578B71F3470AF15CD558 /* JTCalendarProtocols.swift */,
+				14D18F83CD8A620651DFF349817B7C46 /* UICollectionViewDelegates.swift */,
+				B95291429C69727026C24B774D6C437C /* UIScrollViewDelegates.swift */,
+				8BB841737F552D66A998D4EFBCFFE6E7 /* UserInteractionFunctions.swift */,
+				AD25A9B0B29DC6AAE55702CE08FECBAA /* Support Files */,
+			);
+			name = JTAppleCalendar;
+			path = JTAppleCalendar;
+			sourceTree = "<group>";
+		};
+		EFB7A0726D4DABE1296E0266BA20D94C /* nanopb */ = {
+			isa = PBXGroup;
+			children = (
+				A0C278EF1E768C81F174CEFAC80F8357 /* pb.h */,
+				FBC6925118BE4BC8866975A9AF1F9E97 /* pb_common.c */,
+				87D064F87DA2BB806984AAD8F6B95AAD /* pb_common.h */,
+				9A28CA9D1D217F177FA69C1D71B27661 /* pb_decode.c */,
+				2FA114046A16A3DBF4B2A37DD38A51EC /* pb_decode.h */,
+				8C89CA9885CF77B6747B71F4D7B94735 /* pb_encode.c */,
+				949D9455111AD3931C2DC23A3F0D94AD /* pb_encode.h */,
+				64566BF3D889690DF1F814F9A068647B /* decode */,
+				827613C2E181D6E28B834D5FF2F90812 /* encode */,
+				01F9E798342AE6BD9B9E6DC7BDEE131C /* Support Files */,
+			);
+			name = nanopb;
+			path = nanopb;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		4547B9AF8085A499AA35614798F8F9E4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9D92BA503505CB48EF4ECF0DDF57686 /* nanopb-umbrella.h in Headers */,
+				392F2CF142BAA751AC1BB61D8B757D98 /* pb.h in Headers */,
+				806BAA4E00218D70995697C4400BE7A0 /* pb_common.h in Headers */,
+				29FEADDF2086FDEA7D5BA87DD23B08C6 /* pb_decode.h in Headers */,
+				E181395E73163EB702FCE9A21403D67B /* pb_encode.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82D993B88C10479096F17ADDEAB85D94 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3F381B45ADFDDE51CA31F1E141236CA /* GTMSessionFetcher-umbrella.h in Headers */,
+				8852FD9AFC242520924D98BE9C4E2477 /* GTMSessionFetcher.h in Headers */,
+				1ED67707C258751E7888DAC2AB3D8501 /* GTMSessionFetcherLogging.h in Headers */,
+				DF9559C3822E3C6119BE43E4EDFD7EEE /* GTMSessionFetcherService.h in Headers */,
+				F09EDD53B94234F5F8DAC4DCD5CD969E /* GTMSessionUploadFetcher.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB0A1DF130E97C4755B09863D7F1AD5F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0749EC40D3519957D43A1040F9662F71 /* GoogleToolboxForMac-umbrella.h in Headers */,
+				B05C496A6F67CE9F60DC711F402AB20A /* GTMDebugSelectorValidation.h in Headers */,
+				4F2AB5BFF7D9DE66B8B242ACE69AE0D9 /* GTMDebugThreadValidation.h in Headers */,
+				D28734EDC84B2A7FBC4D5DCF95177BF8 /* GTMDefines.h in Headers */,
+				B9A04CBBF007CB8AAF75D61C5EF4D81F /* GTMMethodCheck.h in Headers */,
+				C34E24520624B382515A0F58185E6926 /* GTMNSData+zlib.h in Headers */,
+				11F0D0CB930604B4DAAE93FEA3904826 /* GTMNSDictionary+URLArguments.h in Headers */,
+				DA2F5A299DC9A8ECC5F73A66172E64BC /* GTMNSString+URLArguments.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5849F1845AEA52184EFEE42035B70E5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72FDE938CDEA2132E7774C4AEF93EF70 /* Pods-CalendarSync-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB3B104AA552AE0C55DA5E3D426A375A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD07BFC6787F19F9D7CADB48C114FDB7 /* JTAppleCalendar-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		107A9565F9DF88517DFD3E28C05B2B96 /* GoogleToolboxForMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3166596B665E06C4B76C8ABB6AB06824 /* Build configuration list for PBXNativeTarget "GoogleToolboxForMac" */;
+			buildPhases = (
+				222F0DC2D2D238CAB82346DE258E5472 /* Sources */,
+				9DB2FD04E98E8D08B812CFAD3603A106 /* Frameworks */,
+				BB0A1DF130E97C4755B09863D7F1AD5F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GoogleToolboxForMac;
+			productName = GoogleToolboxForMac;
+			productReference = 77098BC5AB3291E5002AEB46E191D147 /* GoogleToolboxForMac.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		43535F96A55F15BC9118B56F3EF67B89 /* Pods-CalendarSync */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 89B0630E24B6037A421B8D934CB55BCB /* Build configuration list for PBXNativeTarget "Pods-CalendarSync" */;
+			buildPhases = (
+				0D47FEFA6ADC950182A74E6B52D115C8 /* Sources */,
+				ADCC43B360E134FB1FD467C31226504E /* Frameworks */,
+				E5849F1845AEA52184EFEE42035B70E5 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FAF5792EDC31DE0324BEFEBA26CC9605 /* PBXTargetDependency */,
+				38BDCE1F6703F3D5C26AE7ADC6FDA8CE /* PBXTargetDependency */,
+				4524DBD5EECE2DF774A7073FB4DF02C3 /* PBXTargetDependency */,
+				946D4BB5D58665B2A25E3A41046DAB13 /* PBXTargetDependency */,
+			);
+			name = "Pods-CalendarSync";
+			productName = "Pods-CalendarSync";
+			productReference = F73DE8D7EBDF7A264326E3C119E764FA /* Pods_CalendarSync.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		BFED2E29E95E065400F8846E0231A970 /* JTAppleCalendar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 851CF7150444685C470082788BA7AD96 /* Build configuration list for PBXNativeTarget "JTAppleCalendar" */;
+			buildPhases = (
+				5D5AC0418099BE9EFEA67AA7EF8A9423 /* Sources */,
+				456A38528F491C16A318D4091CF2E1F8 /* Frameworks */,
+				EB3B104AA552AE0C55DA5E3D426A375A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JTAppleCalendar;
+			productName = JTAppleCalendar;
+			productReference = EC0905715DA9789CEA4146AE777D9F4F /* JTAppleCalendar.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C052BEBFBD0AB5218CC64BA3450F6547 /* GTMSessionFetcher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D7CC8559AB6F51830204F1A9CE54BF3E /* Build configuration list for PBXNativeTarget "GTMSessionFetcher" */;
+			buildPhases = (
+				C5A309EC5A80A27DBD420C5176E2122A /* Sources */,
+				6AE88E96161DE195EAAF0A3B6375EA50 /* Frameworks */,
+				82D993B88C10479096F17ADDEAB85D94 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GTMSessionFetcher;
+			productName = GTMSessionFetcher;
+			productReference = 01D4C42A666F9911DC61D6DE255E7DC6 /* GTMSessionFetcher.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E4DD95323C54A78F879DAB0F1508B8E7 /* nanopb */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F118B0FA84AC9116AB2E480C302C3999 /* Build configuration list for PBXNativeTarget "nanopb" */;
+			buildPhases = (
+				238527BE8D494586023F2A2B8A60D242 /* Sources */,
+				971041836592E28ADEEDA495A96A62A2 /* Frameworks */,
+				4547B9AF8085A499AA35614798F8F9E4 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = nanopb;
+			productName = nanopb;
+			productReference = EB60FD8FF0E9A2AFBE46C9A420CDDE43 /* nanopb.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 1CC8DBA5F30662730FBAB5DBAEFCC9EE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				107A9565F9DF88517DFD3E28C05B2B96 /* GoogleToolboxForMac */,
+				C052BEBFBD0AB5218CC64BA3450F6547 /* GTMSessionFetcher */,
+				BFED2E29E95E065400F8846E0231A970 /* JTAppleCalendar */,
+				E4DD95323C54A78F879DAB0F1508B8E7 /* nanopb */,
+				43535F96A55F15BC9118B56F3EF67B89 /* Pods-CalendarSync */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0D47FEFA6ADC950182A74E6B52D115C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06037E0BE80F83ACB522CA58C1716C85 /* Pods-CalendarSync-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		222F0DC2D2D238CAB82346DE258E5472 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32CF9BB4493C89CB01FFADD6DB754927 /* GoogleToolboxForMac-dummy.m in Sources */,
+				2EFC826FB30ECD27C98CE7F3707E9012 /* GTMNSData+zlib.m in Sources */,
+				E7D23D2F163A34BEC60FD54BCCC22C76 /* GTMNSDictionary+URLArguments.m in Sources */,
+				5B92D1D5ECFEBA99F4C67864E1397A6D /* GTMNSString+URLArguments.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		238527BE8D494586023F2A2B8A60D242 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				468DFD90B6C4DA2F7CFA0C1C89F1B615 /* nanopb-dummy.m in Sources */,
+				3A50F5C8ECED9627F2EBD97F61BD376D /* pb_common.c in Sources */,
+				54F580BF4588159D6A61F21D15591805 /* pb_decode.c in Sources */,
+				55D8D5D912CFD2F3584E4553C2EAD734 /* pb_encode.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D5AC0418099BE9EFEA67AA7EF8A9423 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1CF59B57CC636FECACC39325231B177 /* CalendarEnums.swift in Sources */,
+				6DE7D8CE614DBA55D744EDE81C632AD8 /* CalendarStructs.swift in Sources */,
+				6E8E4422AA0E96DCBB9D329BDFFB881A /* GlobalFunctionsAndExtensions.swift in Sources */,
+				E4E19B08166BF4E9E368134D68E9C7DE /* JTAppleCalendar-dummy.m in Sources */,
+				0383A13C6B7C59A3D8EA592B545DABA0 /* JTAppleCalendarDelegateProtocol.swift in Sources */,
+				7BE39092951B492E5954D8012747BFD0 /* JTAppleCalendarLayout.swift in Sources */,
+				E10E15A8A65DB167DE5046915870021A /* JTAppleCalendarLayoutProtocol.swift in Sources */,
+				18904C96207EA9E40B4E71F855201AD8 /* JTAppleCalendarVariables.swift in Sources */,
+				53D7D34D0142A101314ABFA663AC9D08 /* JTAppleCalendarView.swift in Sources */,
+				F2BB49EF903A70B7B68565CCE233FB83 /* JTAppleCell.swift in Sources */,
+				21A3A4A6EF95F8704DC18E4E5F509D07 /* JTAppleCollectionReusableView.swift in Sources */,
+				87329FA016F0D57803855BCE3E90EC82 /* JTCalendarProtocols.swift in Sources */,
+				42F0A3DBCAC670C336C5C988F6609D98 /* UICollectionViewDelegates.swift in Sources */,
+				F963037A1450F74FAE911C248EED47CE /* UIScrollViewDelegates.swift in Sources */,
+				2856845AB8FCE3B1D319091061F593EF /* UserInteractionFunctions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5A309EC5A80A27DBD420C5176E2122A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EA6DFC4473A9B2DB6B8A42EA986BA5B /* GTMSessionFetcher-dummy.m in Sources */,
+				64F31B70A6E5E6963518A01C285B435F /* GTMSessionFetcher.m in Sources */,
+				07340F15BACBA601736DBB2ABF1ABC35 /* GTMSessionFetcherLogging.m in Sources */,
+				95C69447F517DB81437EDE0003486963 /* GTMSessionFetcherService.m in Sources */,
+				F4E294C07EE32FFCDCF7FF4D71D850BD /* GTMSessionUploadFetcher.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		38BDCE1F6703F3D5C26AE7ADC6FDA8CE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GoogleToolboxForMac;
+			target = 107A9565F9DF88517DFD3E28C05B2B96 /* GoogleToolboxForMac */;
+			targetProxy = 1A4EDF87AC83232DBF7D7670475D0F68 /* PBXContainerItemProxy */;
+		};
+		4524DBD5EECE2DF774A7073FB4DF02C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = JTAppleCalendar;
+			target = BFED2E29E95E065400F8846E0231A970 /* JTAppleCalendar */;
+			targetProxy = 9C26E76ED93A41FFC7A4E62E9763C1EF /* PBXContainerItemProxy */;
+		};
+		946D4BB5D58665B2A25E3A41046DAB13 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = nanopb;
+			target = E4DD95323C54A78F879DAB0F1508B8E7 /* nanopb */;
+			targetProxy = 73F1CFC1AAA2BAF34E434E7524A9E95E /* PBXContainerItemProxy */;
+		};
+		FAF5792EDC31DE0324BEFEBA26CC9605 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GTMSessionFetcher;
+			target = C052BEBFBD0AB5218CC64BA3450F6547 /* GTMSessionFetcher */;
+			targetProxy = 4A343F54AA11CD9B46DACB33892412AA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2866D185C7DA3FE3BE71B4E7CC3E45E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82A59788F3771C16E6D7254456864DB3 /* GTMSessionFetcher.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/GTMSessionFetcher/GTMSessionFetcher-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GTMSessionFetcher/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GTMSessionFetcher/GTMSessionFetcher.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = GTMSessionFetcher;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		295D97D57E7B89F2489E2DDBD1E5EDAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F64F7889324ADDDD5D36DC1AD021468 /* GoogleToolboxForMac.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/GoogleToolboxForMac/GoogleToolboxForMac-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GoogleToolboxForMac/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GoogleToolboxForMac/GoogleToolboxForMac.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = GoogleToolboxForMac;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6623C9DC9681AAB82851D2CB3D3F64CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F64F7889324ADDDD5D36DC1AD021468 /* GoogleToolboxForMac.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/GoogleToolboxForMac/GoogleToolboxForMac-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GoogleToolboxForMac/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GoogleToolboxForMac/GoogleToolboxForMac.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = GoogleToolboxForMac;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6FF1286C5C6238BA4D96BF6E25B6093E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F717D88CAD604C011F7D59B7BF139EC5 /* nanopb.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/nanopb/nanopb-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/nanopb/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/nanopb/nanopb.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = nanopb;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		707B86CFB21B645E37109F39754D4051 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		76B34214CA2B28DFEB7AE5C00BC4419A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 914511B274FB097EF80FAA2C61780E91 /* JTAppleCalendar.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/JTAppleCalendar/JTAppleCalendar-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/JTAppleCalendar/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/JTAppleCalendar/JTAppleCalendar.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = JTAppleCalendar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		900E2CC733D18C689F7F927E967A1667 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 914511B274FB097EF80FAA2C61780E91 /* JTAppleCalendar.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/JTAppleCalendar/JTAppleCalendar-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/JTAppleCalendar/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/JTAppleCalendar/JTAppleCalendar.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = JTAppleCalendar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AD19D2D7DBE90801322BE1AADDFB213E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F717D88CAD604C011F7D59B7BF139EC5 /* nanopb.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/nanopb/nanopb-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/nanopb/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/nanopb/nanopb.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = nanopb;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DA47CBBBC2BA126ABA5153DFFBFB3DD6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1336C8B3C73E9CEA3361A065155BE7BF /* Pods-CalendarSync.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-CalendarSync/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CalendarSync/Pods-CalendarSync.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_CalendarSync;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E5C6C8EECC28EF5099BB373F53C89A3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82A59788F3771C16E6D7254456864DB3 /* GTMSessionFetcher.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/GTMSessionFetcher/GTMSessionFetcher-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GTMSessionFetcher/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GTMSessionFetcher/GTMSessionFetcher.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = GTMSessionFetcher;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E829C253491F1495473A5FE20058B16C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AED4B1D0332418F89A01B41ED0B55D06 /* Pods-CalendarSync.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-CalendarSync/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CalendarSync/Pods-CalendarSync.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_CalendarSync;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		EF26A3C5B6EDA309192C6025F703DE0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF26A3C5B6EDA309192C6025F703DE0A /* Debug */,
+				707B86CFB21B645E37109F39754D4051 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3166596B665E06C4B76C8ABB6AB06824 /* Build configuration list for PBXNativeTarget "GoogleToolboxForMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				295D97D57E7B89F2489E2DDBD1E5EDAB /* Debug */,
+				6623C9DC9681AAB82851D2CB3D3F64CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		851CF7150444685C470082788BA7AD96 /* Build configuration list for PBXNativeTarget "JTAppleCalendar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76B34214CA2B28DFEB7AE5C00BC4419A /* Debug */,
+				900E2CC733D18C689F7F927E967A1667 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		89B0630E24B6037A421B8D934CB55BCB /* Build configuration list for PBXNativeTarget "Pods-CalendarSync" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA47CBBBC2BA126ABA5153DFFBFB3DD6 /* Debug */,
+				E829C253491F1495473A5FE20058B16C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D7CC8559AB6F51830204F1A9CE54BF3E /* Build configuration list for PBXNativeTarget "GTMSessionFetcher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E5C6C8EECC28EF5099BB373F53C89A3B /* Debug */,
+				2866D185C7DA3FE3BE71B4E7CC3E45E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F118B0FA84AC9116AB2E480C302C3999 /* Build configuration list for PBXNativeTarget "nanopb" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD19D2D7DBE90801322BE1AADDFB213E /* Debug */,
+				6FF1286C5C6238BA4D96BF6E25B6093E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

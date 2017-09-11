@@ -21,6 +21,8 @@
 		28CDBC391F58A4CA00230724 /* SplitViewsContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CDBC381F58A4CA00230724 /* SplitViewsContainerViewController.swift */; };
 		28CDBC3B1F58A50700230724 /* UserEventsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CDBC3A1F58A50700230724 /* UserEventsTableViewController.swift */; };
 		28CDBC3D1F58A51D00230724 /* ContactsEventsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CDBC3C1F58A51D00230724 /* ContactsEventsTableViewController.swift */; };
+		28CDBC411F66F7B600230724 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CDBC401F66F7B600230724 /* Event.swift */; };
+		28CDBC431F66FA2800230724 /* EventController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CDBC421F66FA2800230724 /* EventController.swift */; };
 		D19D10AC75502E31BBA1B780 /* Pods_CalendarSync.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F53EDD7BE8FD25AC9146652D /* Pods_CalendarSync.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +44,8 @@
 		28CDBC381F58A4CA00230724 /* SplitViewsContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplitViewsContainerViewController.swift; sourceTree = "<group>"; };
 		28CDBC3A1F58A50700230724 /* UserEventsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserEventsTableViewController.swift; sourceTree = "<group>"; };
 		28CDBC3C1F58A51D00230724 /* ContactsEventsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsEventsTableViewController.swift; sourceTree = "<group>"; };
+		28CDBC401F66F7B600230724 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		28CDBC421F66FA2800230724 /* EventController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventController.swift; sourceTree = "<group>"; };
 		D3D13464DA49E6F65C622AD2 /* Pods-CalendarSync.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalendarSync.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CalendarSync/Pods-CalendarSync.debug.xcconfig"; sourceTree = "<group>"; };
 		F53EDD7BE8FD25AC9146652D /* Pods_CalendarSync.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CalendarSync.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -123,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				2894C63E1F54B47F00D8546D /* UserController.swift */,
+				28CDBC421F66FA2800230724 /* EventController.swift */,
 			);
 			name = ModelControllers;
 			sourceTree = "<group>";
@@ -131,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				2894C63C1F54B31200D8546D /* User.swift */,
+				28CDBC401F66F7B600230724 /* Event.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -309,6 +315,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				28CDBC291F54CB9000230724 /* LoginViewController.swift in Sources */,
+				28CDBC411F66F7B600230724 /* Event.swift in Sources */,
+				28CDBC431F66FA2800230724 /* EventController.swift in Sources */,
 				28CDBC2F1F572CB000230724 /* CalendarCell.swift in Sources */,
 				2894C63F1F54B47F00D8546D /* UserController.swift in Sources */,
 				28CDBC2D1F56215100230724 /* ContactsTableViewController.swift in Sources */,

@@ -12,15 +12,16 @@ class User {
     
     private var nameKey = "name"
     private var emailKey = "email"
-    private var userIDKey = "userID"
     private var contactsKey = "contacts"
+    private var eventsKey = "events"
     
     let name: String
     let email: String
     let userID: String
-    // add these in the user controller
-    // let contacts: [User]
-    // let events: [Event]
+    // add
+    // let phoneNumber: Int
+    // let contacts: [name: phoneNumber]
+    // let events: [event.name: event.jsonData]
     
     init(name: String = "", email: String = "", userID: String = "") {
         self.name = name

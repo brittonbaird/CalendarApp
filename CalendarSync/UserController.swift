@@ -13,6 +13,7 @@ class UserController {
     
     var user = User()
     var contacts: [User] = []
+    var events: [Event] = []
     
     static var shared = UserController()
     
@@ -82,33 +83,33 @@ class UserController {
         dataTask.resume()
     }
     
-    func fetchContact(withID userID: String) {
-        
-        guard let baseUrl = baseURL else { return }
-        let url = baseUrl.appendingPathComponent("users").appendingPathComponent(userID).appendingPathExtension("json")
-        
-        var request = URLRequest(url: url)
-        request.httpMethod = "GET"
-        request.httpBody = nil
-        
-        let dataTask = URLSession.shared.dataTask(with: request) { (data, _, error) in
-            if let error = error {
-                print("Error fetching contact: \(error)")
-            }
-            
-            guard let data = data,
-                let responseDataString = String(data: data, encoding: .utf8) else { return }
-            
-            print(responseDataString)
-            
-            guard let contactDictionary = (try? JSONSerialization.jsonObject(with: data, options: [.allowFragments])) as? [String: Any] else { return }
-            
-            guard let contact = User(jsonDictionary: contactDictionary, userID: userID) else { return }
-            
-            self.contacts.append(contact)
-        }
-        dataTask.resume()
-    }
+//    func fetchContact(withID userID: String) {
+//        
+//        guard let baseUrl = baseURL else { return }
+//        let url = baseUrl.appendingPathComponent("users").appendingPathComponent(userID).appendingPathExtension("json")
+//        
+//        var request = URLRequest(url: url)
+//        request.httpMethod = "GET"
+//        request.httpBody = nil
+//        
+//        let dataTask = URLSession.shared.dataTask(with: request) { (data, _, error) in
+//            if let error = error {
+//                print("Error fetching contact: \(error)")
+//            }
+//            
+//            guard let data = data,
+//                let responseDataString = String(data: data, encoding: .utf8) else { return }
+//            
+//            print(responseDataString)
+//            
+//            guard let contactDictionary = (try? JSONSerialization.jsonObject(with: data, options: [.allowFragments])) as? [String: Any] else { return }
+//            
+//            guard let contact = User(jsonDictionary: contactDictionary, userID: userID) else { return }
+//            
+//            self.contacts.append(contact)
+//        }
+//        dataTask.resume()
+//    }
     
 }
 

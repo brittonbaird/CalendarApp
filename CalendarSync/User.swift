@@ -17,25 +17,28 @@ class User {
     
     let name: String
     let email: String
+    let phoneNumber: String
     let userID: String
     // add
     // let phoneNumber: Int
     // let contacts: [name: phoneNumber]
     // let events: [event.name: event.jsonData]
     
-    init(name: String = "", email: String = "", userID: String = "") {
+    init(name: String = "", email: String = "", phoneNumber: String = "", userID: String = "") {
         self.name = name
         self.email = email
+        self.phoneNumber = phoneNumber
         self.userID = userID
     }
     
-    init?(jsonDictionary: [String: Any], userID: String) {
+    init?(jsonDictionary: [String: Any], userID: String, phoneNumber: String) {
         guard let name = jsonDictionary[nameKey] as? String,
             let email = jsonDictionary[emailKey] as? String
             else { return nil }
         
         self.name = name
         self.email = email
+        self.phoneNumber = phoneNumber
         self.userID = userID
     }
     

@@ -23,6 +23,9 @@
 		28CDBC3D1F58A51D00230724 /* ContactsEventsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CDBC3C1F58A51D00230724 /* ContactsEventsTableViewController.swift */; };
 		28CDBC411F66F7B600230724 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CDBC401F66F7B600230724 /* Event.swift */; };
 		28CDBC431F66FA2800230724 /* EventController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CDBC421F66FA2800230724 /* EventController.swift */; };
+		28CDBC481F68819B00230724 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CDBC471F68819B00230724 /* HomeViewController.swift */; };
+		28F65BD31F6C335D000F6E70 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F65BD21F6C335D000F6E70 /* AccountViewController.swift */; };
+		28F65BD51F6C34FE000F6E70 /* PeopleToIncludeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F65BD41F6C34FE000F6E70 /* PeopleToIncludeTableViewController.swift */; };
 		D19D10AC75502E31BBA1B780 /* Pods_CalendarSync.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F53EDD7BE8FD25AC9146652D /* Pods_CalendarSync.framework */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +49,9 @@
 		28CDBC3C1F58A51D00230724 /* ContactsEventsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsEventsTableViewController.swift; sourceTree = "<group>"; };
 		28CDBC401F66F7B600230724 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		28CDBC421F66FA2800230724 /* EventController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventController.swift; sourceTree = "<group>"; };
+		28CDBC471F68819B00230724 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		28F65BD21F6C335D000F6E70 /* AccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		28F65BD41F6C34FE000F6E70 /* PeopleToIncludeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleToIncludeTableViewController.swift; sourceTree = "<group>"; };
 		D3D13464DA49E6F65C622AD2 /* Pods-CalendarSync.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalendarSync.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CalendarSync/Pods-CalendarSync.debug.xcconfig"; sourceTree = "<group>"; };
 		F53EDD7BE8FD25AC9146652D /* Pods_CalendarSync.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CalendarSync.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -115,10 +121,12 @@
 		2894C6391F54AC4300D8546D /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				28CDBC281F54CB9000230724 /* LoginViewController.swift */,
-				28CDBC2C1F56215100230724 /* ContactsTableViewController.swift */,
-				28CDBC371F57546000230724 /* SplitViews */,
+				28CDBC451F68816700230724 /* LoginView */,
+				28CDBC461F68817800230724 /* HomeView */,
+				28CDBC491F69ACAA00230724 /* AccountView */,
+				28CDBC441F68813B00230724 /* ContactsView */,
 				28CDBC361F574B3200230724 /* CalendarView */,
+				28CDBC371F57546000230724 /* SplitView */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -150,14 +158,47 @@
 			name = CalendarView;
 			sourceTree = "<group>";
 		};
-		28CDBC371F57546000230724 /* SplitViews */ = {
+		28CDBC371F57546000230724 /* SplitView */ = {
 			isa = PBXGroup;
 			children = (
 				28CDBC381F58A4CA00230724 /* SplitViewsContainerViewController.swift */,
 				28CDBC3A1F58A50700230724 /* UserEventsTableViewController.swift */,
 				28CDBC3C1F58A51D00230724 /* ContactsEventsTableViewController.swift */,
+				28F65BD41F6C34FE000F6E70 /* PeopleToIncludeTableViewController.swift */,
 			);
-			name = SplitViews;
+			name = SplitView;
+			sourceTree = "<group>";
+		};
+		28CDBC441F68813B00230724 /* ContactsView */ = {
+			isa = PBXGroup;
+			children = (
+				28CDBC2C1F56215100230724 /* ContactsTableViewController.swift */,
+			);
+			name = ContactsView;
+			sourceTree = "<group>";
+		};
+		28CDBC451F68816700230724 /* LoginView */ = {
+			isa = PBXGroup;
+			children = (
+				28CDBC281F54CB9000230724 /* LoginViewController.swift */,
+			);
+			name = LoginView;
+			sourceTree = "<group>";
+		};
+		28CDBC461F68817800230724 /* HomeView */ = {
+			isa = PBXGroup;
+			children = (
+				28CDBC471F68819B00230724 /* HomeViewController.swift */,
+			);
+			name = HomeView;
+			sourceTree = "<group>";
+		};
+		28CDBC491F69ACAA00230724 /* AccountView */ = {
+			isa = PBXGroup;
+			children = (
+				28F65BD21F6C335D000F6E70 /* AccountViewController.swift */,
+			);
+			name = AccountView;
 			sourceTree = "<group>";
 		};
 		2A555153264F8B1930D72AC8 /* Pods */ = {
@@ -316,7 +357,9 @@
 			files = (
 				28CDBC291F54CB9000230724 /* LoginViewController.swift in Sources */,
 				28CDBC411F66F7B600230724 /* Event.swift in Sources */,
+				28F65BD31F6C335D000F6E70 /* AccountViewController.swift in Sources */,
 				28CDBC431F66FA2800230724 /* EventController.swift in Sources */,
+				28F65BD51F6C34FE000F6E70 /* PeopleToIncludeTableViewController.swift in Sources */,
 				28CDBC2F1F572CB000230724 /* CalendarCell.swift in Sources */,
 				2894C63F1F54B47F00D8546D /* UserController.swift in Sources */,
 				28CDBC2D1F56215100230724 /* ContactsTableViewController.swift in Sources */,
@@ -325,6 +368,7 @@
 				28CDBC391F58A4CA00230724 /* SplitViewsContainerViewController.swift in Sources */,
 				28CDBC3B1F58A50700230724 /* UserEventsTableViewController.swift in Sources */,
 				2894C6261F5493F000D8546D /* AppDelegate.swift in Sources */,
+				28CDBC481F68819B00230724 /* HomeViewController.swift in Sources */,
 				28CDBC3D1F58A51D00230724 /* ContactsEventsTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

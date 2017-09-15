@@ -7,8 +7,17 @@
 //
 
 import UIKit
+import JTAppleCalendar
 
 class SplitViewsContainerViewController: UIViewController {
+    
+    var date: Date? {
+        didSet {
+            navigationItem.title = date?.description
+        }
+    }
+    
+    @IBOutlet weak var homeButton: UIBarButtonItem!
     
     var contactEventsHidden: Bool = true
     let userEvents = UserEventsTableViewController()
@@ -19,6 +28,8 @@ class SplitViewsContainerViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         
+        self.navigationController?.isNavigationBarHidden = false
+        
         if contactEventsHidden {
             
         }
@@ -27,6 +38,9 @@ class SplitViewsContainerViewController: UIViewController {
         addChildViewController(contactsEvents)
     }
 
+    @IBAction func homeButtonPressed(_ sender: Any) {
+        _ = self.navigationController?.popViewController(animated: true)
+    }
     
 
 }

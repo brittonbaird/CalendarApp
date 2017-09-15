@@ -13,6 +13,7 @@ class AccountViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.navigationController?.isNavigationBarHidden = false
         // Do any additional setup after loading the view.
     }
 
@@ -21,6 +22,9 @@ class AccountViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func homeButtonPressed(_ sender: Any) {
+        _ = self.navigationController?.popViewController(animated: true)
+    }
 
     /*
     // MARK: - Navigation

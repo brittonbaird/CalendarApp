@@ -46,7 +46,7 @@ class UserController {
             
             guard let userDictionary = (try? JSONSerialization.jsonObject(with: data, options: [.allowFragments])) as? [String: Any] else { completion(); return }
             
-            guard let user = User(jsonDictionary: userDictionary, userID: userID) else { completion(); return }
+            guard let user = User(jsonDictionary: userDictionary, userID: userID, phoneNumber: "") else { completion(); return }
             
             self.user = user
             

@@ -13,6 +13,7 @@ class ContactsTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.navigationController?.isNavigationBarHidden = false
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -32,6 +33,10 @@ class ContactsTableViewController: UITableViewController {
             
         }
     }
+    
+    @IBAction func homeButtonPressed(_ sender: Any) {
+        _ = self.navigationController?.popViewController(animated: true)
+    }
 
     @IBAction func addContactButtonPressed(_ sender: Any) {
         presentAlert()
@@ -39,7 +44,7 @@ class ContactsTableViewController: UITableViewController {
     
     func presentAlert() {
         var nameTextField = UITextField()
-        var contactCodeTextField = UITextField()
+        var phoneNumberTextField = UITextField()
         
         let alert = UIAlertController(title: "New Contact", message: "", preferredStyle: .alert)
         alert.addTextField { (textField) in
@@ -47,8 +52,8 @@ class ContactsTableViewController: UITableViewController {
             nameTextField = textField
         }
         alert.addTextField { (textField) in
-            textField.placeholder = "Enter Contact Code"
-            contactCodeTextField = textField
+            textField.placeholder = "Enter Contacts Phone Number"
+            phoneNumberTextField = textField
         }
         let addAction = UIAlertAction(title: "Add", style: .default) { (sender) in
             

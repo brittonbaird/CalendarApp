@@ -26,6 +26,7 @@
 		28CDBC481F68819B00230724 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CDBC471F68819B00230724 /* HomeViewController.swift */; };
 		28F65BD31F6C335D000F6E70 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F65BD21F6C335D000F6E70 /* AccountViewController.swift */; };
 		28F65BD51F6C34FE000F6E70 /* PeopleToIncludeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F65BD41F6C34FE000F6E70 /* PeopleToIncludeTableViewController.swift */; };
+		28FB12251F8BDB4500D8E15A /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FB12241F8BDB4500D8E15A /* Contact.swift */; };
 		D19D10AC75502E31BBA1B780 /* Pods_CalendarSync.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F53EDD7BE8FD25AC9146652D /* Pods_CalendarSync.framework */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +53,7 @@
 		28CDBC471F68819B00230724 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		28F65BD21F6C335D000F6E70 /* AccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		28F65BD41F6C34FE000F6E70 /* PeopleToIncludeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleToIncludeTableViewController.swift; sourceTree = "<group>"; };
+		28FB12241F8BDB4500D8E15A /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 		D3D13464DA49E6F65C622AD2 /* Pods-CalendarSync.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalendarSync.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CalendarSync/Pods-CalendarSync.debug.xcconfig"; sourceTree = "<group>"; };
 		F53EDD7BE8FD25AC9146652D /* Pods_CalendarSync.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CalendarSync.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -145,6 +147,7 @@
 			children = (
 				2894C63C1F54B31200D8546D /* User.swift */,
 				28CDBC401F66F7B600230724 /* Event.swift */,
+				28FB12241F8BDB4500D8E15A /* Contact.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -359,6 +362,7 @@
 				28CDBC411F66F7B600230724 /* Event.swift in Sources */,
 				28F65BD31F6C335D000F6E70 /* AccountViewController.swift in Sources */,
 				28CDBC431F66FA2800230724 /* EventController.swift in Sources */,
+				28FB12251F8BDB4500D8E15A /* Contact.swift in Sources */,
 				28F65BD51F6C34FE000F6E70 /* PeopleToIncludeTableViewController.swift in Sources */,
 				28CDBC2F1F572CB000230724 /* CalendarCell.swift in Sources */,
 				2894C63F1F54B47F00D8546D /* UserController.swift in Sources */,

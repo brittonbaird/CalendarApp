@@ -19,9 +19,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         FirebaseApp.configure()
         
         self.storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+//        Code to log out user
+//        do {
+//            try Auth.auth().signOut()
+//        } catch let error {
+//            print("error logging out\(error.localizedDescription)")
+//        }
         let currentUser = Auth.auth().currentUser
         if currentUser != nil {
-            self.window?.rootViewController = self.storyboard?.instantiateViewController(withIdentifier: "HomeViewController")
+            self.window?.rootViewController = self.storyboard?.instantiateViewController(withIdentifier: "navigationController")
         } else {
             self.window?.rootViewController = self.storyboard?.instantiateViewController(withIdentifier: "LoginViewController")
         }

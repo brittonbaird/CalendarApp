@@ -52,11 +52,16 @@ class ContactsTableViewController: UITableViewController {
             nameTextField = textField
         }
         alert.addTextField { (textField) in
-            textField.placeholder = "Enter Contacts Phone Number"
+            textField.placeholder = "Enter Phone Number"
             phoneNumberTextField = textField
         }
         let addAction = UIAlertAction(title: "Add", style: .default) { (sender) in
-            
+            if let phoneNumber = phoneNumberTextField.text,
+                let name = nameTextField.text,
+                phoneNumber != "",
+                name != "" {
+                UserController.shared.addContact(withPhoneNumber: phoneNumber, name: name, completion: {})
+            }
         }
         let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
         

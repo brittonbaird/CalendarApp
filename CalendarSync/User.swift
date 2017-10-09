@@ -19,31 +19,31 @@ class User {
     let email: String
     let phoneNumber: String
     let userID: String
-    // add
-    // let phoneNumber: Int
-    // let contacts: [name: phoneNumber]
-    // let events: [event.name: event.jsonData]
+    let contacts: [String]
     
-    init(name: String = "", email: String = "", phoneNumber: String = "", userID: String = "") {
+    init(name: String = "", email: String = "", phoneNumber: String = "", userID: String = "", contacts: [String] = []) {
         self.name = name
         self.email = email
         self.phoneNumber = phoneNumber
         self.userID = userID
+        self.contacts = contacts
     }
     
     init?(jsonDictionary: [String: Any], userID: String, phoneNumber: String) {
         guard let name = jsonDictionary[nameKey] as? String,
-            let email = jsonDictionary[emailKey] as? String
+            let email = jsonDictionary[emailKey] as? String,
+            let contacts = jsonDictionary[contactsKey] as? [String]
             else { return nil }
         
         self.name = name
         self.email = email
         self.phoneNumber = phoneNumber
         self.userID = userID
+        self.contacts = contacts
     }
     
     var dictionaryRepresentation: [String: Any] {
-        return [nameKey: name, emailKey: email]
+        return [nameKey: name, emailKey: email, contactsKey: contacts]
     }
     
     var jsonData: Data? {

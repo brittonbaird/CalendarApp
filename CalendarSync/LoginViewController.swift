@@ -63,8 +63,8 @@ class LoginViewController: UIViewController {
                 Auth.auth().createUser(withEmail: email, password: password, completion: { (user, error) in
                     if user != nil{
                         DispatchQueue.main.async {
-                            guard let userID = user?.uid else { return }
-                            UserController.shared.updateUser(WithName: name, email: email, userID: userID)
+                            //guard let userID = user?.uid else { return }
+                            UserController.shared.updateUser(WithName: name, email: email, userID: phoneNumber)
                             UserController.shared.updateFirebaseUser(completion: {})
                             self.canSegue = true
                             self.performSegue(withIdentifier: "toNewAccount", sender: sender)
@@ -111,8 +111,8 @@ class LoginViewController: UIViewController {
                 Auth.auth().signIn(withEmail: email, password: password, completion: { (user, error) in
                     if user != nil {
                         DispatchQueue.main.async {
-                            guard let userID = user?.uid else { return }
-                            UserController.shared.fetchUser(withID: userID, completion: {} )
+                            //guard let userID = user?.uid else { return }
+                            UserController.shared.fetchUser(withID: (user?.phoneNumber)!, completion: {} )
                             self.canSegue = true
                             self.performSegue(withIdentifier: "toLogin", sender: sender)
                         }
@@ -135,59 +135,15 @@ class LoginViewController: UIViewController {
     
     @IBAction func loginButtonPressed(_ sender: Any) {
         createLoginAlert()
-//        guard let email = emailTextField.text,
-//            let password = passwordTextField.text
-//            else { return }
-//        
-//        if email != "" && password != "" {
-//            Auth.auth().signIn(withEmail: email, password: password, completion: { (user, error) in
-//                if user != nil {
-//                    DispatchQueue.main.async {
-//                        guard let userID = user?.uid else { return }
-//                        UserController.shared.fetchUser(withID: userID, completion: {} )
-//                        self.canSegue = true
-//                        self.performSegue(withIdentifier: "toLogin", sender: sender)
-//                    }
-//                } else  {
-//                    if let error = error {
-//                        // Alert with message describing error
-//                        print("error logging in: \(error)")
-//                    }
-//                }
-//            })
-//        }
     }
 
     @IBAction func newAccountButtonPressed(_ sender: Any) {
         createNewAccountAlert()
-//        guard let name = nameTextField.text,
-//            let email = emailTextField.text,
-//            let password = passwordTextField.text,
-//            password != "" else { return }
-//        
-//        if name != "" && email != "" && password != "" {
-//            Auth.auth().createUser(withEmail: email, password: password, completion: { (user, error) in
-//                if user != nil{
-//                    DispatchQueue.main.async {
-//                        guard let userID = user?.uid else { return }
-//                        UserController.shared.updateUser(WithName: name, email: email, userID: userID)
-//                        UserController.shared.updateFirebaseUser(completion: {})
-//                        self.canSegue = true
-//                        self.performSegue(withIdentifier: "toNewAccount", sender: sender)
-//                    }
-//                } else  {
-//                    if let error = error {
-//                        // Alert with message describing error
-//                        print("error creating account: \(error)")
-//                    }
-//                }
-//            })
-//        }
     }
     
     override func shouldPerformSegue(withIdentifier identifier: String?, sender: Any?) -> Bool {
-        if let ident = identifier {
-            if ident == "toNewAccount" || ident == "toLogin" {
+        if let identifier = identifier {
+            if identifier == "toNewAccount" || identifier == "toLogin" {
                 if !canSegue {
                     return false
                 }

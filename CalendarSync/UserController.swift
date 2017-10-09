@@ -12,7 +12,7 @@ import Firebase
 class UserController {
     
     var user = User()
-    var contacts: [User] = []
+    var contacts: [Contact] = []
     var events: [Event] = []
     
     static var shared = UserController()
@@ -83,6 +83,35 @@ class UserController {
         dataTask.resume()
     }
     
+    func addContact(withPhoneNumber phoneNumber: String, name: String, completion: @escaping() -> Void) {
+        let contact = Contact(name: name, contactNumber: phoneNumber)
+        
+        guard let baseUrl = baseURL else { return }
+        let url = baseUrl.appendingPathComponent("users").appendingPathComponent(user.phoneNumber).appendingPathComponent("contacts").appendingPathComponent(contact.contactNumber).appendingPathExtension("json")
+        
+        var request = URLRequest(url: url)
+        request.httpMethod = "PUT"
+        request.httpBody = contact.jsonData
+        
+        let dataTask = URLSession.shared.dataTask(with: request) { (data, _, error) in
+            guard let data = data,
+                let responseDataString = String(data: data, encoding: .utf8)
+                else { completion(); return }
+            
+            
+            if let error = error {
+                print("Error updating user data: \(error)")
+                completion()
+                return
+            } else {
+                print(responseDataString)
+                completion()
+            }
+            
+        }
+        dataTask.resume()
+    }
+}
 //    func fetchContact(withID userID: String) {
 //        
 //        guard let baseUrl = baseURL else { return }
@@ -111,7 +140,7 @@ class UserController {
 //        dataTask.resume()
 //    }
     
-}
+
 
 
 

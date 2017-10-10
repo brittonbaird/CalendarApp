@@ -27,6 +27,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        }
         let currentUser = Auth.auth().currentUser
         if currentUser != nil {
+            // need to update user with current user values
+            // UserController.shared.fetchUser(withID: (currentUser?.providerID)!, completion: {})
             self.window?.rootViewController = self.storyboard?.instantiateViewController(withIdentifier: "navigationController")
         } else {
             self.window?.rootViewController = self.storyboard?.instantiateViewController(withIdentifier: "LoginViewController")

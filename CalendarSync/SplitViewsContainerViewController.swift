@@ -11,31 +11,27 @@ import JTAppleCalendar
 
 class SplitViewsContainerViewController: UIViewController {
     
+    @IBOutlet weak var homeButton: UIBarButtonItem!
+    @IBOutlet weak var userEventsList: UIView!
+    @IBOutlet weak var contactEventsList: UIView!
+    
     var date: Date? {
         didSet {
-            navigationItem.title = date?.description
+            formatter.dateFormat = "MMMM dd"
+            self.navigationItem.title = formatter.string(from: date!)
         }
     }
-    
-    @IBOutlet weak var homeButton: UIBarButtonItem!
-    
+    let formatter = DateFormatter()
     var contactEventsHidden: Bool = true
-    let userEvents = UserEventsTableViewController()
-    let contactsEvents = ContactsEventsTableViewController()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
         
         self.navigationController?.isNavigationBarHidden = false
         
         if contactEventsHidden {
             
         }
-        
-        addChildViewController(userEvents)
-        addChildViewController(contactsEvents)
     }
 
     @IBAction func homeButtonPressed(_ sender: Any) {

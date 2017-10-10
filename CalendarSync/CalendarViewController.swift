@@ -76,8 +76,9 @@ extension CalendarViewController: JTAppleCalendarViewDataSource {
         formatter.locale = Calendar.current.locale
         
         let startDate = Date()
-        guard let endDate = formatter.date(from: "2017 12 31")
-            else { return ConfigurationParameters(startDate: Date(), endDate: Date())}
+        let endDate = Date(timeIntervalSinceNow: 63115200.0)
+//        guard let endDate = formatter.date(from: "2017 12 31")
+//            else { return ConfigurationParameters(startDate: Date(), endDate: Date())}
         
         let parameters = ConfigurationParameters(startDate: startDate, endDate: endDate)
        

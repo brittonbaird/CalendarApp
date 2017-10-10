@@ -17,13 +17,16 @@ class ContactsTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return UserController.shared.contacts.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "contactCell", for: indexPath)
         
-        cell.textLabel?.text = ""
+        let contact = UserController.shared.contacts[indexPath.row]
+        
+        cell.textLabel?.text = contact.name
+        cell.detailTextLabel?.text = contact.contactNumber
         
         return cell
     }
@@ -39,7 +42,7 @@ class ContactsTableViewController: UITableViewController {
     }
 
     @IBAction func addContactButtonPressed(_ sender: Any) {
-        presentAlert()
+        self.presentAlert()
     }
     
     func presentAlert() {
@@ -60,7 +63,11 @@ class ContactsTableViewController: UITableViewController {
                 let name = nameTextField.text,
                 phoneNumber != "",
                 name != "" {
-                UserController.shared.addContact(withPhoneNumber: phoneNumber, name: name, completion: {})
+                UserController.shared.addContact(withPhoneNumber: phoneNumber, name: name, completion: {
+                    DispatchQueue.main.async {
+                        self.tableView.reloadData()
+                    }
+                })
             }
         }
         let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)

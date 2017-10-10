@@ -21,7 +21,7 @@ class Contact {
         self.contactNumber = contactNumber
     }
     
-    init?(jsonDictionary: [String: Any], userID: String, phoneNumber: String) {
+    init?(jsonDictionary: [String: Any]) {
         guard let name = jsonDictionary[nameKey] as? String,
             let contactNumber = jsonDictionary[contactNumberKey] as? String
             else { return nil }
@@ -31,12 +31,17 @@ class Contact {
     }
     
     var dictionaryRepresentation: [String: Any] {
-        return [nameKey: name]
+        return [contactNumber : [nameKey: name, contactNumberKey: contactNumber]]
     }
     
     var jsonData: Data? {
         return try? JSONSerialization.data(withJSONObject: dictionaryRepresentation, options: .prettyPrinted)
     }
-    
-    
+}
+
+extension Contact: Equatable {
+    static func == (lhs: Contact, rhs: Contact) -> Bool {
+        return lhs.name == rhs.name &&
+            lhs.contactNumber == rhs.contactNumber
+    }
 }

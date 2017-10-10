@@ -64,6 +64,7 @@ class LoginViewController: UIViewController {
                     if user != nil{
                         DispatchQueue.main.async {
                             //guard let userID = user?.uid else { return }
+                            UserController.shared.saveToUserDefaults(value: phoneNumber)
                             UserController.shared.updateUser(WithName: name, email: email, userID: phoneNumber)
                             UserController.shared.updateFirebaseUser(completion: {})
                             self.canSegue = true
@@ -89,6 +90,7 @@ class LoginViewController: UIViewController {
     func createLoginAlert() {
         var emailTextField = UITextField()
         var passwordTextField = UITextField()
+        var phoneNumberTextField = UITextField()
         
         let alert = UIAlertController(title: "Login", message: "", preferredStyle: .alert)
         
@@ -101,10 +103,15 @@ class LoginViewController: UIViewController {
             textField.isSecureTextEntry = true
             passwordTextField = textField
         }
+        alert.addTextField { (textField) in
+            textField.placeholder = "Enter Phone Number"
+            phoneNumberTextField = textField
+        }
         
         let createAction = UIAlertAction(title: "Login", style: .default) { (sender) in
             guard let email = emailTextField.text,
-                let password = passwordTextField.text
+                let password = passwordTextField.text,
+                let phoneNumber = phoneNumberTextField.text
                 else { return }
             
             if email != "" && password != "" {
@@ -112,7 +119,8 @@ class LoginViewController: UIViewController {
                     if user != nil {
                         DispatchQueue.main.async {
                             //guard let userID = user?.uid else { return }
-                            UserController.shared.fetchUser(withID: (user?.phoneNumber)!, completion: {} )
+                            UserController.shared.saveToUserDefaults(value: phoneNumber)
+                            UserController.shared.fetchUser(withID: phoneNumber, completion: {} )
                             self.canSegue = true
                             self.performSegue(withIdentifier: "toLogin", sender: sender)
                         }

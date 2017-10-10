@@ -7,12 +7,18 @@
 //
 
 import UIKit
+import Firebase
 
 class HomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        UserController.shared.loadNumberFromUserDefaults(key: "phoneNumber")
+        UserController.shared.fetchUser(withID: UserController.shared.user.phoneNumber, completion: {} )
+        
+        UserController.shared.fetchContacts(completion: {})
+        
         self.navigationController?.isNavigationBarHidden = true
     }
 

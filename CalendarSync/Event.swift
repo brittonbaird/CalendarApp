@@ -20,7 +20,7 @@ class Event {
     var startTime: String
     var endTime: String
     var date: String
-    var contacts: [String: Bool]
+    var contacts: [String]
     var name: String
     var details: String
     
@@ -28,7 +28,7 @@ class Event {
         guard let startTime = jsonDictionary[startTimeKey] as? String,
             let endTime = jsonDictionary[endTimeKey] as? String,
             let date = jsonDictionary[dateKey] as? String,
-            let contacts = jsonDictionary[contactsKey] as? [String: Bool],
+            let contacts = jsonDictionary[contactsKey] as? [String],
             let name = jsonDictionary[nameKey] as? String,
             let details = jsonDictionary[detailsKey] as? String
             else { return nil }
@@ -41,7 +41,7 @@ class Event {
         self.details = details
     }
     
-    init(startTime: String, endTime: String, date: String, contacts: [String: Bool], name: String, details: String) {
+    init(startTime: String, endTime: String, date: String, contacts: [String], name: String, details: String) {
         self.startTime = startTime
         self.endTime = endTime
         self.date = date
@@ -51,7 +51,7 @@ class Event {
     }
     
     var dictionaryRepresentation: [String: Any] {
-        return [name: [startTimeKey: startTime, endTimeKey: endTime, dateKey: date, contactsKey: contacts, nameKey: name, detailsKey: details]]
+        return [date: [startTimeKey: startTime, endTimeKey: endTime, dateKey: date, contactsKey: contacts, nameKey: name, detailsKey: details]]
     }
     
     var jsonData: Data? {

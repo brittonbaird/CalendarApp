@@ -14,6 +14,7 @@
 		2894C63D1F54B31200D8546D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2894C63C1F54B31200D8546D /* User.swift */; };
 		2894C63F1F54B47F00D8546D /* UserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2894C63E1F54B47F00D8546D /* UserController.swift */; };
 		2894C6411F54BC1C00D8546D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2894C6401F54BC1C00D8546D /* GoogleService-Info.plist */; };
+		28C038001F8EB260007CEF51 /* CreateEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C037FF1F8EB260007CEF51 /* CreateEventViewController.swift */; };
 		28CDBC291F54CB9000230724 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CDBC281F54CB9000230724 /* LoginViewController.swift */; };
 		28CDBC2D1F56215100230724 /* ContactsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CDBC2C1F56215100230724 /* ContactsTableViewController.swift */; };
 		28CDBC2F1F572CB000230724 /* CalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CDBC2E1F572CB000230724 /* CalendarCell.swift */; };
@@ -22,7 +23,6 @@
 		28CDBC3B1F58A50700230724 /* UserEventsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CDBC3A1F58A50700230724 /* UserEventsTableViewController.swift */; };
 		28CDBC3D1F58A51D00230724 /* ContactsEventsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CDBC3C1F58A51D00230724 /* ContactsEventsTableViewController.swift */; };
 		28CDBC411F66F7B600230724 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CDBC401F66F7B600230724 /* Event.swift */; };
-		28CDBC431F66FA2800230724 /* EventController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CDBC421F66FA2800230724 /* EventController.swift */; };
 		28CDBC481F68819B00230724 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CDBC471F68819B00230724 /* HomeViewController.swift */; };
 		28F65BD31F6C335D000F6E70 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F65BD21F6C335D000F6E70 /* AccountViewController.swift */; };
 		28F65BD51F6C34FE000F6E70 /* PeopleToIncludeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F65BD41F6C34FE000F6E70 /* PeopleToIncludeTableViewController.swift */; };
@@ -42,6 +42,7 @@
 		2894C63C1F54B31200D8546D /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		2894C63E1F54B47F00D8546D /* UserController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserController.swift; sourceTree = "<group>"; };
 		2894C6401F54BC1C00D8546D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		28C037FF1F8EB260007CEF51 /* CreateEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEventViewController.swift; sourceTree = "<group>"; };
 		28CDBC281F54CB9000230724 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		28CDBC2C1F56215100230724 /* ContactsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsTableViewController.swift; sourceTree = "<group>"; };
 		28CDBC2E1F572CB000230724 /* CalendarCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarCell.swift; sourceTree = "<group>"; };
@@ -50,7 +51,6 @@
 		28CDBC3A1F58A50700230724 /* UserEventsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserEventsTableViewController.swift; sourceTree = "<group>"; };
 		28CDBC3C1F58A51D00230724 /* ContactsEventsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsEventsTableViewController.swift; sourceTree = "<group>"; };
 		28CDBC401F66F7B600230724 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
-		28CDBC421F66FA2800230724 /* EventController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventController.swift; sourceTree = "<group>"; };
 		28CDBC471F68819B00230724 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		28F65BD21F6C335D000F6E70 /* AccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		28F65BD41F6C34FE000F6E70 /* PeopleToIncludeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleToIncludeTableViewController.swift; sourceTree = "<group>"; };
@@ -139,7 +139,6 @@
 			isa = PBXGroup;
 			children = (
 				2894C63E1F54B47F00D8546D /* UserController.swift */,
-				28CDBC421F66FA2800230724 /* EventController.swift */,
 			);
 			name = ModelControllers;
 			sourceTree = "<group>";
@@ -154,6 +153,33 @@
 			name = Models;
 			sourceTree = "<group>";
 		};
+		28C038011F8EB287007CEF51 /* splitViews */ = {
+			isa = PBXGroup;
+			children = (
+				28CDBC381F58A4CA00230724 /* SplitViewsContainerViewController.swift */,
+				28CDBC3A1F58A50700230724 /* UserEventsTableViewController.swift */,
+				28CDBC3C1F58A51D00230724 /* ContactsEventsTableViewController.swift */,
+			);
+			name = splitViews;
+			sourceTree = "<group>";
+		};
+		28C038021F8EB295007CEF51 /* peopleToInclude */ = {
+			isa = PBXGroup;
+			children = (
+				28F65BD41F6C34FE000F6E70 /* PeopleToIncludeTableViewController.swift */,
+				28FB12261F8D309E00D8E15A /* isIncludedTableViewCell.swift */,
+			);
+			name = peopleToInclude;
+			sourceTree = "<group>";
+		};
+		28C038031F8EB2A3007CEF51 /* createEvent */ = {
+			isa = PBXGroup;
+			children = (
+				28C037FF1F8EB260007CEF51 /* CreateEventViewController.swift */,
+			);
+			name = createEvent;
+			sourceTree = "<group>";
+		};
 		28CDBC361F574B3200230724 /* CalendarView */ = {
 			isa = PBXGroup;
 			children = (
@@ -166,11 +192,9 @@
 		28CDBC371F57546000230724 /* SplitView */ = {
 			isa = PBXGroup;
 			children = (
-				28CDBC381F58A4CA00230724 /* SplitViewsContainerViewController.swift */,
-				28CDBC3A1F58A50700230724 /* UserEventsTableViewController.swift */,
-				28CDBC3C1F58A51D00230724 /* ContactsEventsTableViewController.swift */,
-				28F65BD41F6C34FE000F6E70 /* PeopleToIncludeTableViewController.swift */,
-				28FB12261F8D309E00D8E15A /* isIncludedTableViewCell.swift */,
+				28C038011F8EB287007CEF51 /* splitViews */,
+				28C038021F8EB295007CEF51 /* peopleToInclude */,
+				28C038031F8EB2A3007CEF51 /* createEvent */,
 			);
 			name = SplitView;
 			sourceTree = "<group>";
@@ -365,7 +389,6 @@
 				28CDBC291F54CB9000230724 /* LoginViewController.swift in Sources */,
 				28CDBC411F66F7B600230724 /* Event.swift in Sources */,
 				28F65BD31F6C335D000F6E70 /* AccountViewController.swift in Sources */,
-				28CDBC431F66FA2800230724 /* EventController.swift in Sources */,
 				28FB12251F8BDB4500D8E15A /* Contact.swift in Sources */,
 				28F65BD51F6C34FE000F6E70 /* PeopleToIncludeTableViewController.swift in Sources */,
 				28CDBC2F1F572CB000230724 /* CalendarCell.swift in Sources */,
@@ -375,6 +398,7 @@
 				28CDBC351F574B1F00230724 /* CalendarViewController.swift in Sources */,
 				28FB12271F8D309E00D8E15A /* isIncludedTableViewCell.swift in Sources */,
 				28CDBC391F58A4CA00230724 /* SplitViewsContainerViewController.swift in Sources */,
+				28C038001F8EB260007CEF51 /* CreateEventViewController.swift in Sources */,
 				28CDBC3B1F58A50700230724 /* UserEventsTableViewController.swift in Sources */,
 				2894C6261F5493F000D8546D /* AppDelegate.swift in Sources */,
 				28CDBC481F68819B00230724 /* HomeViewController.swift in Sources */,

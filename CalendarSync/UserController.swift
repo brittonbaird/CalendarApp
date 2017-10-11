@@ -14,6 +14,7 @@ class UserController {
     var user = User()
     var contacts: [Contact] = []
     var events: [Event] = []
+    var contactEvents: [Event] = []
     
     static var shared = UserController()
     

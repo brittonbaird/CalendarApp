@@ -453,7 +453,7 @@
                                     <constraint firstAttribute="height" constant="281" id="Al5-fQ-fMT"/>
                                 </constraints>
                                 <connections>
-                                    <segue destination="57m-xV-N2N" kind="embed" id="DF0-k9-Fip"/>
+                                    <segue destination="57m-xV-N2N" kind="embed" identifier="showContactEvents" id="DF0-k9-Fip"/>
                                 </connections>
                             </containerView>
                         </subviews>
@@ -567,7 +567,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="3K2-Ym-0Fd" kind="show" id="UAH-nI-VJJ"/>
+                                    <segue destination="3K2-Ym-0Fd" kind="show" identifier="toAddEvent" id="UAH-nI-VJJ"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -642,7 +642,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ex. February 20 1993" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Z9r-D0-En5">
+                                    <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ex. February 20 1993" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Z9r-D0-En5">
                                         <rect key="frame" x="58" y="0.0" width="285" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="Cx3-Wp-Nxs"/>
@@ -693,7 +693,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ex. Video Games" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="m44-fB-T8N">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ex. Board Game Night" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="m44-fB-T8N">
                                         <rect key="frame" x="57" y="0.0" width="286" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="uyl-cV-q1k"/>

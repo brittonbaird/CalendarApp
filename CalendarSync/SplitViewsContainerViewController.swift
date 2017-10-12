@@ -45,6 +45,8 @@ class SplitViewsContainerViewController: UIViewController {
         } else {
             contactEventsList.isHidden = false
         }
+        
+        //performSegue(withIdentifier: "showContactEvents", sender: self)
     }
     
     @IBAction func homeButtonPressed(_ sender: Any) {
@@ -56,6 +58,13 @@ class SplitViewsContainerViewController: UIViewController {
             if let destinationViewController = segue.destination as? PeopleToIncludeTableViewController {
                 destinationViewController.delegate = self
                 destinationViewController.includedContacts = self.includedContacts
+            }
+        }
+        
+        if segue.identifier == "showContactEvents" {
+            if let destinationViewController = segue.destination as? ContactsEventsTableViewController {
+                destinationViewController.includedContacts = includedContacts
+                destinationViewController.date = self.date!
             }
         }
     }

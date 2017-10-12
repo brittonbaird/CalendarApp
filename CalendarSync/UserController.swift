@@ -194,11 +194,11 @@ class UserController {
         dataTask.resume()
     }
     
-    func addEvent(withName name: String, startTime: String, endTime: String, date: String, contacts: [String: Bool], details: String, completion: @escaping() -> Void) {
+    func addEvent(withName name: String, startTime: String, endTime: String, date: String, contacts: [String: [String: String]], details: String, completion: @escaping() -> Void) {
         let event = Event(startTime: startTime, endTime: endTime, date: date, contacts: contacts, name: name, details: details)
         
         guard let baseUrl = baseURL else { return }
-        let url = baseUrl.appendingPathComponent("users").appendingPathComponent(user.phoneNumber).appendingPathComponent("events").appendingPathExtension("json")
+        let url = baseUrl.appendingPathComponent("users").appendingPathComponent(user.phoneNumber).appendingPathComponent("events").appendingPathComponent(event.date).appendingPathExtension("json")
         
         var request = URLRequest(url: url)
         request.httpMethod = "PATCH"
@@ -228,7 +228,7 @@ class UserController {
     
     func deleteEvent(event: Event, completion: @escaping() -> Void) {
         guard let baseUrl = baseURL else { return }
-        let url = baseUrl.appendingPathComponent("users").appendingPathComponent(user.phoneNumber).appendingPathComponent("events").appendingPathComponent(event.name).appendingPathExtension("json")
+        let url = baseUrl.appendingPathComponent("users").appendingPathComponent(user.phoneNumber).appendingPathComponent("events").appendingPathComponent(event.date).appendingPathComponent(event.name).appendingPathExtension("json")
         
         var request = URLRequest(url: url)
         request.httpMethod = "DELETE"

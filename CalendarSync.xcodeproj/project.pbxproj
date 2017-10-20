@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		280F56671F97F8EA00C5CF02 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280F56661F97F8EA00C5CF02 /* StringExtension.swift */; };
 		2894C6261F5493F000D8546D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2894C6251F5493F000D8546D /* AppDelegate.swift */; };
 		2894C62B1F5493F000D8546D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2894C6291F5493F000D8546D /* Main.storyboard */; };
 		2894C62D1F5493F000D8546D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2894C62C1F5493F000D8546D /* Assets.xcassets */; };
@@ -33,6 +34,8 @@
 
 /* Begin PBXFileReference section */
 		182837B134802DA5C5AA78CF /* Pods-CalendarSync.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalendarSync.release.xcconfig"; path = "Pods/Target Support Files/Pods-CalendarSync/Pods-CalendarSync.release.xcconfig"; sourceTree = "<group>"; };
+		280F56661F97F8EA00C5CF02 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		280F56681F98058F00C5CF02 /* CalendarSync.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CalendarSync.entitlements; sourceTree = "<group>"; };
 		2894C6221F5493F000D8546D /* CalendarSync.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalendarSync.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2894C6251F5493F000D8546D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2894C62A1F5493F000D8546D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -93,6 +96,7 @@
 		2894C6241F5493F000D8546D /* CalendarSync */ = {
 			isa = PBXGroup;
 			children = (
+				280F56681F98058F00C5CF02 /* CalendarSync.entitlements */,
 				2894C6251F5493F000D8546D /* AppDelegate.swift */,
 				2894C63B1F54AC5800D8546D /* Models */,
 				2894C63A1F54AC4E00D8546D /* ModelControllers */,
@@ -149,6 +153,7 @@
 				2894C63C1F54B31200D8546D /* User.swift */,
 				28CDBC401F66F7B600230724 /* Event.swift */,
 				28FB12241F8BDB4500D8E15A /* Contact.swift */,
+				280F56661F97F8EA00C5CF02 /* StringExtension.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -286,6 +291,11 @@
 						DevelopmentTeam = 4972GJ38P8;
 						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -332,6 +342,7 @@
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/JTAppleCalendar/JTAppleCalendar.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -339,6 +350,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JTAppleCalendar.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -400,6 +412,7 @@
 				28CDBC391F58A4CA00230724 /* SplitViewsContainerViewController.swift in Sources */,
 				28C038001F8EB260007CEF51 /* CreateEventViewController.swift in Sources */,
 				28CDBC3B1F58A50700230724 /* UserEventsTableViewController.swift in Sources */,
+				280F56671F97F8EA00C5CF02 /* StringExtension.swift in Sources */,
 				2894C6261F5493F000D8546D /* AppDelegate.swift in Sources */,
 				28CDBC481F68819B00230724 /* HomeViewController.swift in Sources */,
 				28CDBC3D1F58A51D00230724 /* ContactsEventsTableViewController.swift in Sources */,
@@ -545,8 +558,9 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.brittonbaird.CalendarSync;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
 				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -560,8 +574,9 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.brittonbaird.CalendarSync;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
 				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

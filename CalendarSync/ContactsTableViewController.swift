@@ -9,6 +9,8 @@
 import UIKit
 
 class ContactsTableViewController: UITableViewController {
+    
+    let digits = CharacterSet.decimalDigits
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,8 +34,14 @@ class ContactsTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        let contact = UserController.shared.contacts[indexPath.row]
+        
         if editingStyle == .delete {
-            
+            UserController.shared.deleteContact(contact: contact, completion: {
+                DispatchQueue.main.async {
+                    self.tableView.reloadData()
+                }
+            })
         }
     }
     
@@ -51,28 +59,62 @@ class ContactsTableViewController: UITableViewController {
         
         let alert = UIAlertController(title: "New Contact", message: "", preferredStyle: .alert)
         alert.addTextField { (textField) in
-            textField.placeholder = "Enter Name"
+            textField.placeholder = "Name"
             nameTextField = textField
         }
         alert.addTextField { (textField) in
-            textField.placeholder = "Enter Phone Number"
+            textField.placeholder = "Phone Number (10 Digits)"
             phoneNumberTextField = textField
         }
         let addAction = UIAlertAction(title: "Add", style: .default) { (sender) in
             if let phoneNumber = phoneNumberTextField.text,
                 let name = nameTextField.text,
                 phoneNumber != "",
-                name != "" {
-                UserController.shared.addContact(withPhoneNumber: phoneNumber, name: name, completion: {
-                    DispatchQueue.main.async {
-                        self.tableView.reloadData()
+                name != "",
+                phoneNumber.characters.count == 10 {
+                for char in phoneNumber.unicodeScalars {
+                    if !self.digits.contains(char) {
+                        self.presentAlert(withName: "Only numbers can be used when entering a phone number")
+                        return
+                    }
+                }
+                UserController.shared.fetchNumber(withID: phoneNumber, completion: { (success) in
+                    if success{
+                        for contact in UserController.shared.contacts {
+                            if contact.contactNumber == phoneNumber {
+                                self.presentAlert(withName: "You already have a contact with that number")
+                                return
+                            }
+                        }
+                        
+                        UserController.shared.addContact(withPhoneNumber: phoneNumber, name: name, completion: {
+                            DispatchQueue.main.async {
+                                self.tableView.reloadData()
+                            }
+                        })
+                        return
+                    } else {
+                        self.presentAlert(withName: "No account found with that number")
                     }
                 })
+            } else {
+                self.presentAlert(withName: "Please make sure the phone number is 10 characres and that each field is filled out")
             }
         }
         let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
         
         alert.addAction(addAction)
+        alert.addAction(cancelAction)
+        
+        self.present(alert, animated: true)
+    }
+    
+    func presentAlert(withName name: String) {
+        
+        let alert = UIAlertController(title: name, message: "", preferredStyle: .alert)
+        
+        let cancelAction = UIAlertAction(title: "Dismiss", style: .cancel, handler: nil)
+        
         alert.addAction(cancelAction)
         
         self.present(alert, animated: true)

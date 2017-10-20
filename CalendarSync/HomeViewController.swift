@@ -11,6 +11,8 @@ import Firebase
 
 class HomeViewController: UIViewController {
 
+    @IBOutlet weak var pendingEventsCount: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -19,11 +21,28 @@ class HomeViewController: UIViewController {
         
         UserController.shared.fetchContacts(completion: {})
         
+        pendingEventsCount.layer.cornerRadius = 16
+        pendingEventsCount.clipsToBounds = true
+        
         self.navigationController?.isNavigationBarHidden = true
     }
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
+        
+        if UserController.shared.pendingEvents.count == 0 {
+            self.pendingEventsCount.isHidden = true
+        }
+        
+        UserController.shared.fetchPendingEvents {
+            DispatchQueue.main.async {
+                if UserController.shared.pendingEvents.count > 0 {
+                    self.pendingEventsCount.isHidden = false
+                    self.pendingEventsCount.text = "\(UserController.shared.pendingEvents.count)"
+                }
+                
+            }
+        }
         
         self.navigationController?.isNavigationBarHidden = true
     }

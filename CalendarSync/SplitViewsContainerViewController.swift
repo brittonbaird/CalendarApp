@@ -14,6 +14,7 @@ class SplitViewsContainerViewController: UIViewController {
     @IBOutlet weak var homeButton: UIBarButtonItem!
     @IBOutlet weak var userEventsList: UIView!
     @IBOutlet weak var contactEventsList: UIView!
+    @IBOutlet weak var availableTimesLabel: UILabel!
     
     var date: Date? {
         didSet {
@@ -24,29 +25,42 @@ class SplitViewsContainerViewController: UIViewController {
     let formatter = DateFormatter()
     var includedContacts: [Contact] = []
     var contactEventsHidden: Bool = true
+    var userView = UserEventsTableViewController()
+    var contactsView = ContactsEventsTableViewController()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.navigationController?.isNavigationBarHidden = false
-        
-        if contactEventsHidden {
-            contactEventsList.isHidden = true
-        } else {
-            contactEventsList.isHidden = false
-        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        if contactEventsHidden {
-            contactEventsList.isHidden = true
-        } else {
-            contactEventsList.isHidden = false
+
+        guard let date = date else { return }
+        UserController.shared.fetchEvents(date: date) {
+            DispatchQueue.main.async {
+                self.userView.tableView.reloadData()
+                self.contactsView.tableView.reloadData()
+            }
         }
         
-        //performSegue(withIdentifier: "showContactEvents", sender: self)
+        self.contactsView.includedContacts = self.includedContacts
+        
+        if self.contactEventsHidden {
+            self.contactEventsList.isHidden = true
+            self.availableTimesLabel.isHidden = true
+        } else {
+            self.contactEventsList.isHidden = false
+            self.availableTimesLabel.isHidden = false
+        }
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        UserController.shared.events = []
     }
     
     @IBAction func homeButtonPressed(_ sender: Any) {
@@ -63,8 +77,15 @@ class SplitViewsContainerViewController: UIViewController {
         
         if segue.identifier == "showContactEvents" {
             if let destinationViewController = segue.destination as? ContactsEventsTableViewController {
-                destinationViewController.includedContacts = includedContacts
-                destinationViewController.date = self.date!
+                contactsView = destinationViewController
+                destinationViewController.includedContacts = self.includedContacts 
+                destinationViewController.date = self.date ?? Date()
+            }
+        }
+        
+        if segue.identifier == "showUserEvents" {
+            if let destinationViewController = segue.destination as? UserEventsTableViewController {
+                userView = destinationViewController
             }
         }
     }

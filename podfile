@@ -8,5 +8,6 @@ target 'CalendarSync' do
   # Pods for CalendarSync
 pod 'Firebase/Core'
 pod 'Firebase/Auth'
+pod 'Firebase/Messaging'
 pod 'JTAppleCalendar', '~> 7.0'
 end

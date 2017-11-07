@@ -553,6 +553,7 @@
 			baseConfigurationReference = D3D13464DA49E6F65C622AD2 /* Pods-CalendarSync.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 4972GJ38P8;
 				INFOPLIST_FILE = CalendarSync/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -569,6 +570,7 @@
 			baseConfigurationReference = 182837B134802DA5C5AA78CF /* Pods-CalendarSync.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 4972GJ38P8;
 				INFOPLIST_FILE = CalendarSync/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

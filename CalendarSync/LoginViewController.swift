@@ -92,7 +92,11 @@ class LoginViewController: UIViewController {
                 })
                 
             } else {
-                self.presentAlert(withName: "Please fill out all fields")
+                if phoneNumber.characters.count != 10 {
+                    self.presentAlert(withName: "Please make sure the phone number is 10 digits and no puncutation is used")
+                } else {
+                    self.presentAlert(withName: "Please make sure all fields are filled out correctly")
+                }
             }
         }
         let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
@@ -165,7 +169,11 @@ class LoginViewController: UIViewController {
                 })
                 
             } else {
-                self.presentAlert(withName: "Please make sure all fields are filled out correctly")
+                if phoneNumber.characters.count != 10 {
+                    self.presentAlert(withName: "Please make sure the phone number is 10 digits and no puncutation is used")
+                } else {
+                    self.presentAlert(withName: "Please make sure all fields are filled out correctly")
+                }
             }
             
         }

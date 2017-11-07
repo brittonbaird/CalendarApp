@@ -466,9 +466,6 @@ class UserController {
                 completion()
             }
             
-            guard let index = self.pendingEvents.index(of: event) else { return }
-            self.pendingEvents.remove(at: index)
-            
             completion()
         }
         dataTask.resume()

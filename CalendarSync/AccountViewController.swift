@@ -19,7 +19,6 @@ class AccountViewController: UIViewController, UITableViewDelegate, UITableViewD
         tableView.dataSource = self
         
         self.navigationController?.isNavigationBarHidden = false
-        // Do any additional setup after loading the view.
     }
     
     @IBAction func homeButtonPressed(_ sender: Any) {
@@ -40,27 +39,6 @@ class AccountViewController: UIViewController, UITableViewDelegate, UITableViewD
         return cell
     }
     
-//    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-    
-//        let event = UserController.shared.pendingEvents[indexPath.row]
-        
-//        if editingStyle == .delete {
-//            UserController.shared.deletePendingEvent(event: event, completion: {
-//                DispatchQueue.main.async {
-//                    self.tableView.deleteRows(at: [indexPath], with: .fade)
-//                    //self.tableView.reloadData()
-//                }
-//            })
-//        } else if editingStyle == .insert {
-//            UserController.shared.addPendingEvent(event: event, completion: {
-//                DispatchQueue.main.async {
-//                    UserController.shared.pendingEvents.remove(at: indexPath.row)
-//                    self.tableView.reloadData()
-//                }
-//            })
-//        }
-//    }
-    
     func tableView(_ tableView: UITableView, editActionsForRowAt: IndexPath) -> [UITableViewRowAction]? {
         
         let indexPath = editActionsForRowAt
@@ -68,21 +46,16 @@ class AccountViewController: UIViewController, UITableViewDelegate, UITableViewD
 
         
         let delete = UITableViewRowAction(style: .destructive, title: "Delete") { action, index in
-            UserController.shared.deletePendingEvent(event: event, completion: {
-                DispatchQueue.main.async {
-                    tableView.deleteRows(at: [indexPath], with: .fade)
-                    //self.tableView.reloadData()
-                }
-            })
+            UserController.shared.pendingEvents.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .fade)
+            UserController.shared.deletePendingEvent(event: event, completion: {})
         }
         delete.backgroundColor = .red
         
         let add = UITableViewRowAction(style: .destructive, title: "Add") { action, index in
-            UserController.shared.addPendingEvent(event: event, completion: {
-                DispatchQueue.main.async {
-                    tableView.deleteRows(at: [indexPath], with: .fade)
-                }
-            })
+            UserController.shared.pendingEvents.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .fade)
+            UserController.shared.addPendingEvent(event: event, completion: {})
         }
         add.backgroundColor = .green
         

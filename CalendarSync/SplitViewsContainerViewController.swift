@@ -15,6 +15,7 @@ class SplitViewsContainerViewController: UIViewController {
     @IBOutlet weak var userEventsList: UIView!
     @IBOutlet weak var contactEventsList: UIView!
     @IBOutlet weak var availableTimesLabel: UILabel!
+    @IBOutlet weak var noEventsLabel: UILabel!
     
     var date: Date? {
         didSet {
@@ -31,6 +32,7 @@ class SplitViewsContainerViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
         self.navigationController?.isNavigationBarHidden = false
     }
     
@@ -43,10 +45,13 @@ class SplitViewsContainerViewController: UIViewController {
             DispatchQueue.main.async {
                 self.userView.tableView.reloadData()
                 self.contactsView.tableView.reloadData()
+                if UserController.shared.events.count == 0 {
+                    self.noEventsLabel.isHidden = false
+                }
             }
         }
         
-        self.contactsView.includedContacts = self.includedContacts
+       noEventsLabel.isHidden = true
         
         if self.contactEventsHidden {
             self.contactEventsList.isHidden = true

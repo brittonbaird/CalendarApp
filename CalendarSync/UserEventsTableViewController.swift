@@ -10,8 +10,6 @@ import UIKit
 
 class UserEventsTableViewController: UITableViewController {
 
-    var eventTimes: [String] = ["12:00 am", "1:00 am", "2:00 am", "3:00 am", "4:00 am", "5:00 am", "6:00 am", "7:00 am", "8:00 am", "9:00 am", "10:00 am", "11:00 am", "12:00 pm", "1:00 pm", "2:00 pm", "3:00 pm", "4:00 pm", "5:00 pm", "6:00 pm", "7:00 pm", "8:00 pm", "9:00 pm", "10:00 pm", "11:00 pm"]
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,17 +19,51 @@ class UserEventsTableViewController: UITableViewController {
 
     // MARK: - Table view data source
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 24
+        return UserController.shared.events.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "userEventTimeCell", for: indexPath)
 
-        cell.textLabel?.text = "Available"
-        cell.detailTextLabel?.text = eventTimes[indexPath.row]
+        let event = UserController.shared.events[indexPath.row]
+        
+        cell.textLabel?.text = event.name
+        cell.detailTextLabel?.text = "\(event.startTime) - \(event.endTime)"
+        cell.layer.cornerRadius = 10
+        cell.layer.borderWidth = 2
 
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        
+        let event = UserController.shared.events[indexPath.row]
+        
+        if editingStyle == .delete {
+            UserController.shared.deleteEvent(event: event, completion: {
+                DispatchQueue.main.async {
+                    self.tableView.reloadData()
+                }
+            })
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toDetail" {
+            if let destinationViewController = segue.destination as? CreateEventViewController {
+                if let index = tableView.indexPathForSelectedRow {
+                    let event = UserController.shared.events[index.row]
+                    destinationViewController.event = event
+                    destinationViewController.startTime = event.startTime
+                    destinationViewController.endTime = event.endTime
+                    destinationViewController.name = event.name
+                    destinationViewController.dateString = event.date
+                    destinationViewController.details = event.details
+                    
+                }
+            }
+        }
     }
  
 }
